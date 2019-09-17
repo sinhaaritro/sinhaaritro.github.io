@@ -148,11 +148,8 @@
     color: #F7F7F7;
 }
 */
-.align-right {
-    direction: rtl;
-}
 .align-left {
-    text-align: ltr;
+    direction: ltr;
 }
 
 /* Semantic Elements */
@@ -227,6 +224,8 @@ body {
     box-shadow: none;
     border-radius: 0px;
     text-align: left;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #E8E8E8;
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -240,6 +239,9 @@ body {
     text-transform: uppercase;
 
     color: #1D1D1D;
+}
+.secondary-button:hover {
+    background-color: #ACACAC;
 }
 .page-section-container {
     height: 20vh;
@@ -330,31 +332,49 @@ header li a {
 
 /* About-area */
 .about-area {
-    padding: 0 5rem 5rem 5rem;
+    padding: 5rem;
     min-height: 90vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 
     background-color: #3A4556;
 }
-.about-area * {
-    flex: 1 1 0;
+.grid-2x1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.about-area > .image {
-    max-height: 100%;
+@media (min-width: 1000px) {
+    .grid-2x1 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+}
+.about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 1000px) {
+    .about-info {
+        align-items: flex-end;
+    }
+}
+.about-info > .page-body {
     text-align: center;
 }
+@media (min-width: 1000px) {
+    .about-info > .page-body {
+        text-align: right;
+    }
+}
 .potrait {
-    margin: 2rem;
-
+    text-align: center;
 }
-.skills-list {
-    list-style-type: none;
-    padding-left: 0; 
-}
-.skills-list > li > div {
-    text-align: start;
+.potrait > img {
+    max-width: 50vw;
 }
 
 /* Services-area */
@@ -388,19 +408,6 @@ header li a {
     min-height: 90vh;
     
     background-color: #3A4556;
-}
-.filter-button {
-    padding: 2rem 1rem 0 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-}
-.filter-button > button {
-    border-radius: 4px 4px 4px 4px;
-    background-color: #E8E8E8;
-}
-.filter-button button:hover {
-    background-color: #ACACAC;
 }
 .portfolio-card {
     background-color: #2D3848;
@@ -445,6 +452,12 @@ header li a {
     .portfolio-card > a > .centered > div {
         font-size: 33px;
     }
+}
+.filter-button {
+    padding: 2rem 1rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
 }
 
 /* Testimonial-area */
