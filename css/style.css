@@ -329,6 +329,9 @@ header li a {
 .home-info > .socialmedia-area a {
     margin: 0 2rem 0 0;
 }
+.svg {
+    fill: white;
+}
 
 /* About-area */
 .about-area {
