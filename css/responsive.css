@@ -1,66 +1,111 @@
-/* https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
+.portfolio-area {
+    padding: 0 24px 24px 24px;
+    
+    background-color: #FDF8CA;
+}
+.portfolio-area .portfolio-area-title {
+    background-color: darksalmon;
+}
+.portfolio-area .portfolio-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-area .portfolio-container .portfolio-card {
+    position: relative;
+    height: 300px;
+    margin: 32px;
+    width: 300px;
+    
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-shown {
+    height: 300px;
+    transform: translateY(0);
+    transition: 0.5s;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+}
+.portfolio-area .portfolio-container .portfolio-card:hover .portfolio-card-shown {
+    transform: translateY(-150px);
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-shown .content img {
+    max-width: 300px;
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-shown .content .portfolio-card-title-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #525252;
+    mix-blend-mode: luminosity;
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-shown .content h3 {
+    padding: 4px;
+    color: #F4F3F3;
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-hidden {
+    display: none;
+    position: relative;
+    background-color: #F4F3F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    transform: translateY(0px) scaleY(0);
+    transform-origin: top center;
+    z-index: 1;
+    transition: 0.5s;
 
-@media (min-width: 1281px) {
-  
-    /*CSS*/
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+}
+.portfolio-area .portfolio-container .portfolio-card:hover .portfolio-card-hidden {
+    display: block;
+    transform: translateY(-150px) scaleY(1);
     
-  }
-  
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    
-    /*CSS*/
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-    /*CSS*/
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    /*CSS*/
-    
-  }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-    /*CSS*/
-    
-  }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    
-    /*CSS*/
-    
-  }
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-hidden .content .tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-hidden .content .tags div{
+    margin: 4px;
+    padding: 1px 4px 0 4px;
+    border-radius: 10px;
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-hidden .content .tags .cpp-tag{
+    background-color: #F39B9B;
+    color: #AF2C2C;
+    font-weight: 600;                                                                                       /*Font Weignt Here*/
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-hidden .content .tags .ue4-tag{
+    background-color: #A6D9F2;
+    color: #3189B4;
+    font-weight: 600;                                                                                       /*Font Weignt Here*/
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-hidden .content .tags .game-dev-tag{
+    background-color: #F2D9A6;
+    color: #B48931;
+    font-weight: 600;                                                                                       /*Font Weignt Here*/
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-hidden .content hr {
+    height: 2px;
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-hidden .content p {
+    padding-top: 12px;
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-hidden .content a {
+    margin: 16px 0 0;
+    padding: 4px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    color: #000000;
+    display: inline-block;
+    text-decoration: none;
+}
+.portfolio-area .portfolio-container .portfolio-card .portfolio-card-hidden .content a:hover {
+    background-color: #000000;
+    color: #F3F3F3;
+}

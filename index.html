@@ -8,7 +8,7 @@
     <meta name="description" content="Aritro's Personal Portfolio without Front-End Library">
     <meta name="keywords" content="developer, resume, cv, portfolio, personal, personal portfolio">
     <meta name="author" content="Aritro Sinha">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- Page name: -->
     <title>Aritro's | Personal Portfolio</title>
@@ -24,347 +24,478 @@
 
     <!-- Responsive css: -->
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Navigation Script: -->
+    <script src="js/navigation.js"></script>
 </head>
 
 <body>
     <!-- Navigation area: -->
     <header>
-        <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Aritro's Logo"></a>
-        <nav>
-            <ul class="navbar-inactive">
-                <li class="active"><a class="nav-menu" href="#home">Home</a></li>
-                <li><a class="nav-menu" href="#about">About</a></li>
-                <li><a class="nav-menu" href="#services">Services</a></li>
-                <li><a class="nav-menu" href="#portfolio">Portfolio</a></li>
-                <li><a class="nav-menu" href="#testimonial">Testimonial</a></li>
-                <li><a class="nav-menu" href="#contact">Contact</a></li>
-            </ul>
+        <nav class="nav-menu" id="menu-bar">
+            <div class="nav-container"></div>
+            <button onclick="toggleMenu()" class="menu-button font-48px">Menu</button>
+            <div class="nav-list" id="menu-list">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" alt="Aritro's Logo or home button logo" class="main-logo">
+                    <div onclick="toggleMenu()" class="main-text font-48px" href="#title">Home</div>
+                </a>
+                <a onclick="toggleMenu()" href="#about">
+                    <div class="font-48px">About</div>
+                </a>
+                <a onclick="toggleMenu()" href="#services">
+                    <div class="font-48px">Services</div>
+                </a>
+                <a onclick="toggleMenu()" href="#portfolio">
+                    <div class="font-48px">Portfolio</div>
+                </a>
+                <a onclick="toggleMenu()" href="#contact">
+                    <div class="font-48px">Contact</div>
+                </a>
+            </div>
         </nav>
     </header>
     <!-- Navigation area end: -->
 
+    <main>
 
-    <div class="hero-area" id="home">
-        <!-- Home area: -->
-        <div class="profile-area">
-            <div class="circular-avatar">
-                <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Aritro's Image"></a>
-            </div>
-            <div class="vr"></div>
-            <div class="home-info">
-                <div class="page-heading">
+        <section id="home" class="header-size"></section>
+
+        <!-- Hero area: -->
+        <section class="hero-area" id="title">
+            <div class="profile-area">
+                <div class="profile-logo">
+                    <img src="images/game-dev-background-img.png" alt="Aritro's Icon">
+                </div>
+                <div class="font-36px">
                     Aritro Sinha
                 </div>
-                <div class="page-sub-heading">
+                <div class="font-36px">
                     Game Developer
                 </div>
-                <div class="socialmedia-area">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M0 0v24h24v-24h-24zm18.862 9.237c.208 4.617-3.235 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.079-4.03 3.198-4.03.944 0 1.797.398 2.396 1.037.748-.147 1.451-.42 2.085-.796-.245.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.44.656-.997 1.234-1.638 1.697z" />
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M0 0v24h24v-24h-24zm12 20c-.825 0-1.62-.125-2.369-.357.326-.531.813-1.402.994-2.098l.499-1.901c.261.498 1.023.918 1.833.918 2.413 0 4.151-2.219 4.151-4.976 0-2.643-2.157-4.62-4.932-4.62-3.452 0-5.286 2.317-5.286 4.841 0 1.174.625 2.634 1.624 3.1.151.07.232.039.268-.107l.222-.907c.019-.081.01-.15-.056-.23-.331-.4-.595-1.138-.595-1.825 0-1.765 1.336-3.472 3.612-3.472 1.965 0 3.341 1.339 3.341 3.255 0 2.164-1.093 3.663-2.515 3.663-.786 0-1.374-.649-1.185-1.446.226-.951.663-1.977.663-2.664 0-.614-.33-1.127-1.012-1.127-.803 0-1.448.831-1.448 1.943 0 .709.239 1.188.239 1.188s-.793 3.353-.938 3.977c-.161.691-.098 1.662-.028 2.294-2.974-1.165-5.082-4.06-5.082-7.449 0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z" />
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M0 0v24h24v-24h-24zm17 6.908l-2.865 5.467.239.292h2.626v4h-4.823l-.431.291-1.449 2.749-.291.293h-3.006v-2.908l2.975-5.489-.24-.27h-2.735v-4h4.917l.431-.291 1.453-2.749.29-.293h2.909v2.908z" />
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M0 0v24h24v-24h-24zm14.534 19.59c-.406.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.311-1.588-.824-2.147.083-.202.357-1.016-.079-2.117 0 0-.671-.215-2.198.82-.639-.18-1.323-.267-2.003-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-9.333v24h-24v-24h24zm-4 12c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z" />
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M24 24h-24v-24h24v24zm-8.288-4.888l-.424-1.48 1.024.952.968.896 1.72 1.52v-14.352c0-.912-.736-1.648-1.64-1.648h-10.72c-.904 0-1.64.736-1.64 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072zm-1.44-3.664c1.768-.056 2.448-1.216 2.448-1.216 0-2.576-1.152-4.664-1.152-4.664-1.152-.864-2.248-.84-2.248-.84l-.112.128c1.36.416 1.992 1.016 1.992 1.016-.832-.456-1.648-.68-2.408-.768-.576-.064-1.128-.048-1.616.016l-.136.016c-.28.024-.96.128-1.816.504l-.472.232s.664-.632 2.104-1.048l-.08-.096s-1.096-.024-2.248.84c0 0-1.152 2.088-1.152 4.664 0 0 .672 1.16 2.44 1.216l.536-.664c-1.016-.304-1.4-.944-1.4-.944l.224.136.032.024.032.018.009.004.031.018c.2.112.4.2.584.272.328.128.72.256 1.176.344.6.112 1.304.152 2.072.008.376-.064.76-.176 1.16-.344.28-.104.592-.256.92-.472 0 0-.4.656-1.448.952l.528.648zm-3.72-3.736c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z" />
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M9.406 17.183c.431-1.025-.05-2.206-1.076-2.637l-1.762-.741c.331-.125.654-.182.982-.183 1.518 0 2.765 1.236 2.779 2.754.014 1.538-1.217 2.792-2.753 2.806-1.159.005-2.138-.684-2.571-1.665l1.763.741c1.027.432 2.207-.05 2.638-1.075zm-9.406-17.183v11.043l5.585 2.349c.596-.39 1.283-.599 2.046-.583l3.017-4.221c.048-2.541 2.122-4.588 4.674-4.588 2.583 0 4.678 2.094 4.678 4.677 0 2.581-2.098 4.703-4.732 4.675l-4.115 3.067-.009.004c-.012 1.962-1.593 3.558-3.561 3.577-1.777.015-3.234-1.249-3.56-2.895l-4.023-1.692v8.587h24v-24h-24zm15.322 11.857c-1.752 0-3.179-1.427-3.179-3.18 0-1.753 1.427-3.179 3.179-3.179 1.753 0 3.179 1.426 3.179 3.179s-1.425 3.18-3.179 3.18zm0-.779c1.325 0 2.401-1.077 2.401-2.401 0-1.323-1.076-2.401-2.401-2.401-1.324 0-2.401 1.078-2.401 2.401 0 1.324 1.078 2.401 2.401 2.401z" />
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M11.376 9.698c-1.621.477-3.554.722-5.79.737.462-1.891 1.735-3.462 3.432-4.325.888 1.162 1.674 2.359 2.358 3.588zm1.104 2.204c-.143-.32-.291-.638-.447-.955-1.854.583-4.068.878-6.633.882l-.009.171c0 1.604.576 3.077 1.531 4.223 1.448-2.173 3.305-3.616 5.558-4.321zm3.549-5.129c-1.117-.862-2.512-1.382-4.029-1.382-.56 0-1.102.078-1.621.21.874 1.174 1.648 2.384 2.326 3.625 1.412-.598 2.52-1.417 3.324-2.453zm7.971-6.773v24h-24v-24h24zm-4 12c0-4.418-3.582-8-8-8s-8 3.582-8 8 3.582 8 8 8 8-3.582 8-8zm-12.056 5.207c1.792 1.399 4.195 1.816 6.427.955-.289-1.7-.744-3.36-1.362-4.973-2.077.619-3.753 1.959-5.065 4.018zm5.4-6.749c.18.371.348.745.511 1.12 1.439-.248 3.018-.233 4.735.049-.083-1.478-.648-2.827-1.547-3.89-.922 1.149-2.16 2.055-3.699 2.721zm1.044 2.437c.56 1.496.988 3.03 1.28 4.598 1.5-1.005 2.561-2.61 2.853-4.467-1.506-.261-2.882-.307-4.133-.131z" />
-                        </svg>
-                    </a>
+            </div>
+        </section>
+        <!-- Hero area end: -->
+
+        <!-- About area: -->
+        <section class="about-area" id="about">
+            <div class="header-size about-area-title">
+                <div class="section-container">
+                    <h1 class="horizontal-center font-48px">About Me</h1>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <main>
-        <!-- About area: -->
-        <div class="about-area" id="about">
-            <div class="grid-2x1">
+            <section class="bio">
+                <div class="potrait">
+                    <img src="images/1-by-1-1024x1024.png" alt="Aritro's Icon">
+                </div>
                 <div class="about-info">
-                    <div class="page-heading align-right">
+                    <div class="name font-36px horizontal-center">
                         Aritro Sinha
                     </div>
-                    <div class="page-sub-heading align-right">
-                        Game Developer
-                    </div>
-                    <div class="page-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Aenean tempus augue vel nunc
-                            ultrices, quis sodales turpis imperdiet. Donec eget
-                            purus nec massa malesuada commodo a non
-                            urna. Suspendisse pretium erat at nunc accumsan,
-                            eget sodales nisl facilisis. Donec pretium arcu et
-                            tortor mollis laoreet. Quisque porttitor nibh nec
-                            lectus consequat, at accumsan lorem auctor.
-                            Phasellus tempus augue sed nibh dictum
-                            commodo. Nulla pretium, metus at semper iaculis,
-                            neque est lacinia libero, quis laoreet eros tortor
-                            vitae ipsum. Sed luctus libero quam, a sodales
-                            magna fringilla sed.</p>
+                    <div class="bio font-16px horizontal-center">
+                        <p>
+                            Hi, I am generalist porgrammer and designer.
+                            I love to find out how all kinds software works and use them in a creative way.
+                            <br>
+                            <br>
+                            I first became interested in how computer works when I played computer games in my childhood
+                            and before I knew it, I was already interested in finding out how games work.
+                            One thing lead to another and now I love making games, apps, websites and design other
+                            softwares.
+                            <br>
+                            <br>
+                            My interest in computer and technology helped me get better and proficient in learning new
+                            things in computer.
+                            At first I was only interested in learning the programming aspects of it, but my focus
+                            shifted and now I like to program and visually design everything.
+                            <br>
+                        </p>
                     </div>
                     <br>
-                    <div class="cv">
+                    <div class="cv horizontal-center">
                         <button class="secondary-button" onclick="location.href = '#';">Download CV</button>
                     </div>
                 </div>
-                <div class="potrait">
-                    <img src="images/main-image.png" alt="Aritro's Image">
+            </section>
+            <section class="education">
+                <div class="heading">
+                    <h2 class="font-36px horizontal-center">
+                        Education
+                    </h2>
                 </div>
-            </div>
-        </div>
-
-        <!-- Services area: -->
-        <div class="services-area" id="services">
-            <div class="page-section-container">
-                <div class="section-heading">
-                    Services
+                <div class="education-list font-16px horizontal-center">
+                    <ul>
+                        <h3 class="font-30px">
+                            University:
+                        </h3>
+                        <li class="font-16px">Did BCA</li>
+                        <li class="font-16px">Some other random course</li>
+                        <br>
+                        <h3 class="font-30px">
+                            A Random Certificate Name:
+                        </h3>
+                        <li class="font-16px">Learnt 3D modelling and animation</li>
+                        <br>
+                        <h3 class="font-30px">
+                            A Random Institute Name:
+                        </h3>
+                        <li class="font-16px">Learnt about UI/UX</li>
+                        <br>
+                    </ul>
                 </div>
-            </div>
-            <div class="grid-3x2">
-                <div class="services-card">
-                    <div class="card-row">
-                        <div class="icon">
-                            <i class="material-icons">face</i>
-                        </div>
-                        <div class="caption-all-caps">
-                            UI/UX Design 1
-                        </div>
-                        <div class="caption-sub-heading">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt.
-                        </div>
-                        <button class="primary-button" onclick="window.location.href = '#';">See projects</button>
+            </section>
+            <section class="proficiency">
+                <section class="proficiency-group">
+                    <div class="heading">
+                        <h2 class="font-36px horizontal-center">
+                            Real World
+                        </h2>
                     </div>
-                </div>
-                <div class="services-card">
-                    <div class="card-row">
-                        <div class="icon">
-                            <i class="material-icons">face</i>
+                    <div class="proficiency-list font-18px horizontal-center">
+                        <div class="proficiency-item">
+                            <span class="pop-up font-14px">
+                                21 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/world-logo.png" alt="World icon">
+                            </div>
+                            <br>
+                            <p>Life</p>
                         </div>
-                        <div class="caption-all-caps">
-                            UI/UX Design 2
+                        <div class="proficiency-item">
+                            <span class="pop-up  font-14px">
+                                18 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/english-logo.png" alt="English language">
+                            </div>
+                            <br>
+                            <p>English</p>
                         </div>
-                        <div class="caption-sub-heading">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt.
+                        <div class="proficiency-item">
+                            <span class="pop-up  font-14px">
+                                10 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/bengali-logo.png" alt="Bengali language">
+                            </div>
+                            <br>
+                            <p>Bengali</p>
                         </div>
-                        <button class="primary-button" onclick="window.location.href = '#';">See projects</button>
+                        <div class="proficiency-item">
+                            <span class="pop-up  font-14px">
+                                10 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/japanese-logo.png" alt="Japanese language">
+                            </div>
+                            <br>
+                            <p>Japanese</p>
+                        </div>
                     </div>
-                </div>
-                <div class="services-card">
-                    <div class="card-row">
-                        <div class="icon">
-                            <i class="material-icons">face</i>
-                        </div>
-                        <div class="caption-all-caps">
-                            UI/UX Design 3
-                        </div>
-                        <div class="caption-sub-heading">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt.
-                        </div>
-                        <button class="primary-button" onclick="window.location.href = '#';">See projects</button>
+                </section>
+                <section class="proficiency-group">
+                    <div class="heading">
+                        <h2 class="font-36px horizontal-center">
+                            Software
+                        </h2>
                     </div>
-                </div>
-                <div class="services-card">
-                    <div class="card-row">
-                        <div class="icon">
-                            <i class="material-icons">face</i>
+                    <div class="proficiency-list font-18px horizontal-center">
+                        <div class="proficiency-item">
+                            <span class="pop-up font-14px">
+                                2 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/blender_logo.png" alt="Blender Logo">
+                            </div>
+                            <br>
+                            <p>Blender</p>
                         </div>
-                        <div class="caption-all-caps">
-                            UI/UX Design 4
+                        <div class="proficiency-item">
+                            <span class="pop-up  font-14px">
+                                2 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/UE_Logo_Icon_Black.png" alt="Unreal Engine 4 Logo">
+                            </div>
+                            <br>
+                            <p>Unreal Engine 4</p>
                         </div>
-                        <div class="caption-sub-heading">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt.
+                        <div class="proficiency-item">
+                            <span class="pop-up  font-14px">
+                                2 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/substance_painter_logo.png"
+                                    alt="Substance Painter Logo">
+                            </div>
+                            <br>
+                            <p>Substance Painter</p>
                         </div>
-                        <button class="primary-button" onclick="window.location.href = '#';">See projects</button>
+                        <div class="proficiency-item">
+                            <span class="pop-up  font-14px">
+                                2 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/substance_designer_logo.png"
+                                    alt="Substance Designer Logo">
+                            </div>
+                            <br>
+                            <p>Substance Designer</p>
+                        </div>
                     </div>
-                </div>
-                <div class="services-card">
-                    <div class="card-row">
-                        <div class="icon">
-                            <i class="material-icons">face</i>
-                        </div>
-                        <div class="caption-all-caps">
-                            UI/UX Design 5
-                        </div>
-                        <div class="caption-sub-heading">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt.
-                        </div>
-                        <button class="primary-button" onclick="window.location.href = '#';">See projects</button>
+                </section>
+                <section class="proficiency-group">
+                    <div class="heading">
+                        <h2 class="font-36px horizontal-center">
+                            Language
+                        </h2>
                     </div>
-                </div>
-                <div class="services-card">
-                    <div class="card-row">
-                        <div class="icon">
-                            <i class="material-icons">face</i>
+                    <div class="proficiency-list font-18px horizontal-center">
+                        <div class="proficiency-item">
+                            <span class="pop-up font-14px">
+                                7 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/cpp-logo.png" alt="C++ Logo">
+                            </div>
+                            <br>
+                            <p>C++</p>
                         </div>
-                        <div class="caption-all-caps">
-                            UI/UX Design 6
+                        <div class="proficiency-item">
+                            <span class="pop-up  font-14px">
+                                10 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/java-logo.png" alt="JAVA Logo">
+                            </div>
+                            <br>
+                            <p>JAVA</p>
                         </div>
-                        <div class="caption-sub-heading">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt.
+                        <div class="proficiency-item">
+                            <span class="pop-up  font-14px">
+                                2 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/python-logo.png" alt="Python Logo">
+                            </div>
+                            <br>
+                            <p>Python</p>
                         </div>
-                        <button class="primary-button" onclick="window.location.href = '#';">See projects</button>
+                        <div class="proficiency-item">
+                            <span class="pop-up  font-14px">
+                                2 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/html-logo.png" alt="HTML Logo">
+                            </div>
+                            <br>
+                            <p>HTML</p>
+                        </div>
+                        <div class="proficiency-item">
+                            <span class="pop-up  font-14px">
+                                2 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/css-logo.png" alt="CSS Logo">
+                            </div>
+                            <br>
+                            <p>CSS</p>
+                        </div>
+                        <div class="proficiency-item">
+                            <span class="pop-up  font-14px">
+                                2 years of experience
+                            </span>
+                            <div class="img-container">
+                                <img src="images/proficiency-logo/js-logo.png" alt="JS Logo">
+                            </div>
+                            <br>
+                            <p>JS</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </section>
+            </section>
+        </section>
+        <!-- About area end: -->
 
         <!-- Portfolio area: -->
-        <div class="portfolio-area" id="portfolio">
-            <div class="page-section-container">
-                <div class="section-heading">
-                    Portfolio
+        <section class="portfolio-area" id="portfolio">
+            <div class="header-size portfolio-area-title">
+                <div class="section-container">
+                    <h1 class="horizontal-center font-48px">Portfolio</h1>
                 </div>
             </div>
-            <div class="grid-3x2">
+            <section class="portfolio-container">
                 <div class="portfolio-card">
-                    <a href="#">
-                        <img src="images/logo.png" alt="Project Image" style="width: 100%">
-                        <div class="centered">
-                            <div class="page-heading">
-                                Project 1
-                            </div>
-                            <br>
-                            <div class="page-sub-heading">
-                                Project Type 1
+                    <div class="portfolio-card-shown">
+                        <div class="content">
+                            <img src="images/rectangle.png" alt="Project Name">
+                            <div class="portfolio-card-title-container">
+                                <h3 class="horizontal-center font-24px">Design</h3>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="portfolio-card-hidden">
+                        <div class="content">
+                            <div class="tags">
+                                <div class="cpp-tag font-14px">C++</div>
+                                <div class="ue4-tag font-14px">UE4</div>
+                                <div class="game-dev-tag font-14px">Game Dev</div>
+                            </div>
+                            <hr>
+                            <p class="horizontal-center font-16px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="horizontal-center font-16px">My Contributions:</p>
+                            <ul>
+                                <li class="horizontal-center font-16px">Models</li>
+                                <li class="horizontal-center font-16px">Animation</li>
+                                <li class="horizontal-center font-16px">C++</li>
+                                <li class="horizontal-center font-16px">Prototype</li>
+                                <li class="horizontal-center font-16px">Optimization</li>
+                            </ul>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio-card">
-                    <a href="#">
-                        <img src="images/logo.png" alt="Project Image" style="width: 100%">
-                        <div class="centered">
-                            <div class="page-heading">
-                                Project 1
-                            </div>
-                            <br>
-                            <div class="page-sub-heading">
-                                Project Type 1
+                    <div class="portfolio-card-shown">
+                        <div class="content">
+                            <img src="images/1-by-1-1024x1024.png" alt="Project Name">
+                            <div class="portfolio-card-title-container">
+                                <h3 class="horizontal-center font-24px">Design</h3>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="portfolio-card-hidden">
+                        <div class="content">
+                            <div class="tags">
+                                <div class="cpp-tag font-14px">C++</div>
+                                <div class="ue4-tag font-14px">UE4</div>
+                                <div class="game-dev-tag font-14px">Game Dev</div>
+                            </div>
+                            <hr>
+                            <p class="horizontal-center font-16px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="horizontal-center font-16px">My Contributions:</p>
+                            <ul>
+                                <li class="horizontal-center font-16px">Models</li>
+                                <li class="horizontal-center font-16px">Animation</li>
+                                <li class="horizontal-center font-16px">C++</li>
+                                <li class="horizontal-center font-16px">Prototype</li>
+                                <li class="horizontal-center font-16px">Optimization</li>
+                            </ul>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio-card">
-                    <a href="#">
-                        <img src="images/logo.png" alt="Project Image" style="width: 100%">
-                        <div class="centered">
-                            <div class="page-heading">
-                                Project 1
-                            </div>
-                            <br>
-                            <div class="page-sub-heading">
-                                Project Type 1
+                    <div class="portfolio-card-shown">
+                        <div class="content">
+                            <img src="images/rectangle.png" alt="Project Name">
+                            <div class="portfolio-card-title-container">
+                                <h3 class="horizontal-center font-24px">Design</h3>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="portfolio-card-hidden">
+                        <div class="content">
+                            <div class="tags">
+                                <div class="cpp-tag font-14px">C++</div>
+                                <div class="ue4-tag font-14px">UE4</div>
+                                <div class="game-dev-tag font-14px">Game Dev</div>
+                            </div>
+                            <hr>
+                            <p class="horizontal-center font-16px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="horizontal-center font-16px">My Contributions:</p>
+                            <ul>
+                                <li class="horizontal-center font-16px">Models</li>
+                                <li class="horizontal-center font-16px">Animation</li>
+                                <li class="horizontal-center font-16px">C++</li>
+                                <li class="horizontal-center font-16px">Prototype</li>
+                                <li class="horizontal-center font-16px">Optimization</li>
+                            </ul>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio-card">
-                    <a href="#">
-                        <img src="images/logo.png" alt="Project Image" style="width: 100%">
-                        <div class="centered">
-                            <div class="page-heading">
-                                Project 1
-                            </div>
-                            <br>
-                            <div class="page-sub-heading">
-                                Project Type 1
+                    <div class="portfolio-card-shown">
+                        <div class="content">
+                            <img src="images/1-by-1-1024x1024.png" alt="Project Name">
+                            <div class="portfolio-card-title-container">
+                                <h3 class="horizontal-center font-24px">Design</h3>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="portfolio-card-hidden">
+                        <div class="content">
+                            <div class="tags">
+                                <div class="cpp-tag font-14px">C++</div>
+                                <div class="ue4-tag font-14px">UE4</div>
+                                <div class="game-dev-tag font-14px">Game Dev</div>
+                            </div>
+                            <hr>
+                            <p class="horizontal-center font-16px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="horizontal-center font-16px">My Contributions:</p>
+                            <ul>
+                                <li class="horizontal-center font-16px">Models</li>
+                                <li class="horizontal-center font-16px">Animation</li>
+                                <li class="horizontal-center font-16px">C++</li>
+                                <li class="horizontal-center font-16px">Prototype</li>
+                                <li class="horizontal-center font-16px">Optimization</li>
+                            </ul>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio-card">
-                    <a href="#">
-                        <img src="images/logo.png" alt="Project Image" style="width: 100%">
-                        <div class="centered">
-                            <div class="page-heading">
-                                Project 1
-                            </div>
-                            <br>
-                            <div class="page-sub-heading">
-                                Project Type 1
+                    <div class="portfolio-card-shown">
+                        <div class="content">
+                            <img src="images/1-by-1-1024x1024.png" alt="Project Name">
+                            <div class="portfolio-card-title-container">
+                                <h3 class="horizontal-center font-24px">Design</h3>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="portfolio-card">
-                    <a href="#">
-                        <img src="images/logo.png" alt="Project Image" style="width: 100%">
-                        <div class="centered">
-                            <div class="page-heading">
-                                Project 1
+                    </div>
+                    <div class="portfolio-card-hidden">
+                        <div class="content">
+                            <div class="tags">
+                                <div class="cpp-tag font-14px">C++</div>
+                                <div class="ue4-tag font-14px">UE4</div>
+                                <div class="game-dev-tag font-14px">Game Dev</div>
                             </div>
-                            <br>
-                            <div class="page-sub-heading">
-                                Project Type 1
-                            </div>
+                            <hr>
+                            <p class="horizontal-center font-16px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="horizontal-center font-16px">My Contributions:</p>
+                            <ul>
+                                <li class="horizontal-center font-16px">Models</li>
+                                <li class="horizontal-center font-16px">Animation</li>
+                                <li class="horizontal-center font-16px">C++</li>
+                                <li class="horizontal-center font-16px">Prototype</li>
+                                <li class="horizontal-center font-16px">Optimization</li>
+                            </ul>
+                            <a href="#">Read More</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            </div>
-            <div class="filter-button">
-                <button class="secondary-button" onclick="location.href = '#';">More Projects</button>
-            </div>
-        </div>
-
-        <!-- Testimonial area: -->
-        <div class="testimonial-area" id="tesimonial">
-            <div class="page-section-container">
-                <div class="section-heading">
-                    Testimonial
-                </div>
-            </div>
-        </div>
+            </section>
+        </section>
 
         <!-- Contact area: -->
-        <div class="contact-area" id="contact">
+        <section class="contact-area" id="contact">
             <div class="page-section-container">
                 <div class="section-heading">
                     Contact
@@ -418,7 +549,7 @@
                     <input class="primary-button submit-button" type="submit" value="Send message" required>
                 </form>
             </div>
-        </div>
+        </section>
 
         <!-- Footer area: -->
     </main>
