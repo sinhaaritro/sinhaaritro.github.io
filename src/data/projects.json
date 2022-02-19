@@ -1,0 +1,139 @@
+[
+    {
+        "title": "Notefy",
+        "img": "string",
+        "tags": [
+            {
+                "text": "MERN",
+                "color": "purple"
+            },
+            {
+                "text": "Frontend",
+                "color": "violet"
+            },
+            {
+                "text": "Backend",
+                "color": "green"
+            }
+        ],
+        "techstack": [
+            {
+                "icon": "react",
+                "color": "sky"
+            },
+            {
+                "icon": "typescript",
+                "color": "blue"
+            },
+            {
+                "icon": "mongodb",
+                "color": "green"
+            },
+            {
+                "icon": "nodedotjs",
+                "color": "emerald"
+            },
+            {
+                "icon": "express",
+                "color": "slate"
+            },
+            {
+                "icon": "tailwindcss",
+                "color": "blue"
+            }
+        ],
+        "description": "A minimalist, markdown enabled note-taking app, where you can save notes, tag them and store them in an infinite hierarchal folder structure.",
+        "externalLinks": [
+            {
+                "name": "Github",
+                "url": "https://github.com/Notefy"
+            }
+        ]
+    },
+    {
+        "title": "MatchFlix",
+        "img": "https://raw.githubusercontent.com/sinhaaritro/MatchFlix/master/screenshots/Main.png",
+        "tags": [
+            {
+                "text": "WebApp",
+                "color": "blue"
+            },
+            {
+                "text": "Frontend",
+                "color": "violet"
+            },
+            {
+                "text": "Netlify",
+                "color": "red"
+            }
+        ],
+        "techstack": [
+            {
+                "icon": "react",
+                "color": "sky"
+            },
+            {
+                "icon": "mui",
+                "color": "blue"
+            },
+            {
+                "icon": "firebase",
+                "color": "yellow"
+            },
+            {
+                "icon": "netlify",
+                "color": "teal"
+            }
+        ],
+        "description": "A movie selector app, where multiple people can log in, make groups and select a movie that all of them like to watch based on common interests.",
+        "externalLinks": [
+            {
+                "name": "Github",
+                "url": "https://github.com/sinhaaritro/MatchFlix"
+            }
+        ]
+    },
+    {
+        "title": "Portfolio Website v2",
+        "img": "string",
+        "tags": [
+            {
+                "text": "Website",
+                "color": "blue"
+            },
+            {
+                "text": "Frontend",
+                "color": "violet"
+            }
+        ],
+        "techstack": [
+            {
+                "icon": "react",
+                "color": "sky"
+            },
+            {
+                "icon": "typescript",
+                "color": "blue"
+            },
+            {
+                "icon": "tailwindcss",
+                "color": "blue"
+            },
+            {
+                "icon": "github",
+                "color": "neutral"
+            }
+        ],
+        "description": "My current personal website in hopes of sharing a little snippet into my life and passions!",
+        "externalLinks": [
+            {
+                "name": "Website",
+                "url": "https://sinhaaritro.github.io/"
+            },
+            {
+                "name": "Github",
+                "url": "https://github.com/sinhaaritro/sinhaaritro.github.io"
+            }
+        ]
+    }
+]

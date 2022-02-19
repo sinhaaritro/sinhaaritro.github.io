@@ -1,0 +1,20 @@
+[
+    {
+        "icon": "gmail",
+        "text": "sinhaaritro@gmail.com",
+        "link": "sinhaaritro@gmail.com",
+        "color": "red"
+    },
+    {
+        "icon": "linkedin",
+        "text": "Aritro Sinha",
+        "link": "https://www.linkedin.com/in/aritro-sinha-98045a1a7/",
+        "color": "blue"
+    },
+    {
+        "icon": "github",
+        "text": "sinhaaritro",
+        "link": "https://github.com/sinhaaritro",
+        "color": "neutral"
+    }
+]

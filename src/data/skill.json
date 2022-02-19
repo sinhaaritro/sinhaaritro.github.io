@@ -1,0 +1,150 @@
+[
+    {
+        "name": "Languages",
+        "skills": [
+            {
+                "icon": "python",
+                "text": "Python",
+                "color": "blue"
+            },
+            {
+                "icon": "html5",
+                "text": "HTML",
+                "color": "orange"
+            },
+            {
+                "icon": "css3",
+                "text": "CSS",
+                "color": "blue"
+            },
+            {
+                "icon": "javascript",
+                "text": "JavaScript",
+                "color": "yellow"
+            },
+            {
+                "icon": "typescript",
+                "text": "TypeScript",
+                "color": "blue"
+            },
+            {
+                "icon": "php",
+                "text": "Php",
+                "color": "violet"
+            },
+            {
+                "icon": "cplusplus",
+                "text": "C++",
+                "color": "blue"
+            },
+            {
+                "icon": "dart",
+                "text": "Dart",
+                "color": "sky"
+            },
+            {
+                "icon": "mongodb",
+                "text": "Mongo DB",
+                "color": "green"
+            }
+        ]
+    },
+    {
+        "name": "Library & Frameworks",
+        "skills": [
+            {
+                "icon": "react",
+                "text": "React",
+                "color": "sky"
+            },
+            {
+                "icon": "nodedotjs",
+                "text": "NodeJS",
+                "color": "emerald"
+            },
+            {
+                "icon": "express",
+                "text": "Express",
+                "color": "slate"
+            },
+            {
+                "icon": "tailwindcss",
+                "text": "Tailwind",
+                "color": "blue"
+            },
+            {
+                "icon": "bootstrap",
+                "text": "Bootstrap",
+                "color": "purple"
+            },
+            {
+                "icon": "mui",
+                "text": "MaterialUI",
+                "color": "blue"
+            },
+            {
+                "text": "Rest API",
+                "color": "fuchsia"
+            },
+            {
+                "icon": "flutter",
+                "text": "Flutter",
+                "color": "indigo"
+            }
+        ]
+    },
+    {
+        "name": "Tools",
+        "skills": [
+            {
+                "icon": "git",
+                "text": "Git",
+                "color": "orange"
+            },
+            {
+                "icon": "github",
+                "text": "Github",
+                "color": "neutral"
+            },
+            {
+                "icon": "visualstudiocode",
+                "text": "Visual Studio Code",
+                "color": "blue"
+            },
+            {
+                "icon": "androidstudio",
+                "text": "Android Studio",
+                "color": "green"
+            },
+            {
+                "icon": "firebase",
+                "text": "Firebase",
+                "color": "yellow"
+            },
+            {
+                "icon": "netlify",
+                "text": "Netlify",
+                "color": "teal"
+            },
+            {
+                "icon": "figma",
+                "text": "Figma",
+                "color": "orange"
+            },
+            {
+                "icon": "notion",
+                "text": "Notion",
+                "color": "neutral"
+            },
+            {
+                "icon": "postman",
+                "text": "Postman",
+                "color": "orange"
+            },
+            {
+                "text": "ThunderClient",
+                "color": "neutral"
+            }
+        ]
+    }
+]
