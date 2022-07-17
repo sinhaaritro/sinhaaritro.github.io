@@ -1,5 +1,5 @@
 import Chip from "components/Chip";
-import PrimaryButton from "components/Button";
+import Button from "components/Button";
 import openLinkInNewTab from "lib/hooks/openLinkInNewTab";
 import { ProjectInterface } from "data/projects";
 
@@ -15,14 +15,18 @@ const ProjectCard = ({
     externalLinks,
 }: ProjectCardProps) => {
     return (
-        <div className="relative group m-8 w-80 text-center bg-slate-900">
-            <div className="h-80 bg-slate-400 origin-right transition ease-in-out duration-500 group-hover:-translate-y-40 shadow-lg shadow-slate-900 group-hover:z-20">
-                <img className="h-80 w-80" alt="project-icon" src={img}></img>
-                <p className="flex justify-center absolute inset-x-0 bottom-0 h-12 p-2 text-2xl bg-slate-800 text-slate-200">
+        <div className="relative group m-8 w-80 text-center bg-slate-900 rounded-md bg-inherit">
+            <div className="h-80 bg-slate-400 origin-right transition ease-in-out duration-500 group-hover:-translate-y-40 shadow-lg shadow-slate-900 group-hover:z-20 rounded-t-md">
+                <img
+                    className="h-80 w-80 rounded-md"
+                    alt="project-icon"
+                    src={img}
+                ></img>
+                <p className="flex justify-center absolute inset-x-0 bottom-0 h-12 p-2 text-2xl bg-slate-800 text-slate-200 rounded-b-md group-hover:rounded-none">
                     {title}
                 </p>
             </div>
-            <div className="absolute w-80 p-4 bg-slate-50 origin-top transition ease-in-out duration-500 shadow-lg shadow-slate-900 scale-y-0  group-hover:block group-hover:-translate-y-40 group-hover:scale-y-100 group-hover:z-20">
+            <div className="absolute w-80 p-4 bg-slate-50 origin-top transition ease-in-out duration-500 shadow-lg shadow-slate-900 scale-y-0  group-hover:block group-hover:-translate-y-40 group-hover:scale-y-100 group-hover:z-20 rounded-b-md">
                 <div className="flex flex-wrap ">
                     {tags.map((tag, i) => {
                         return <Chip key={i} {...tag} />;
@@ -52,13 +56,13 @@ const ProjectCard = ({
                 )}
                 {externalLinks.map((externalLink, i) => {
                     return (
-                        <PrimaryButton
+                        <Button
                             key={i}
-                            variant="secrondary"
+                            variant="secondary"
                             onClick={() => openLinkInNewTab(externalLink.url)}
                         >
                             {externalLink.name}
-                        </PrimaryButton>
+                        </Button>
                     );
                 })}
             </div>

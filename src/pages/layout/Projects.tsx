@@ -1,14 +1,19 @@
 import Text from "components/Text";
-import ProjectCard from "layout/ProjectCard";
-import projectData from "data/projects.json";
+import { useThemeContext } from "config/theme";
 import { ProjectsInterface } from "data/projects";
+import projectData from "data/projects.json";
+import ProjectCard from "layout/ProjectCard";
 
 const Projects = () => {
+    const { theme } = useThemeContext();
     const projects = projectData as ProjectsInterface;
     return (
-        <section id="projects" className="p-4">
+        <section
+            id="projects"
+            className={`m-8 mx-auto max-w-screen-xl flex flex-col place-content-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]} `}
+        >
             <Text
-                className="text-4xl font-semibold"
+                className={`text-4xl font-semibold rounded-t-2xl border-b border-neutral-400 p-2 text-center ${theme?.primary?.[200]}`}
                 children="Projects"
                 htmlElement={"h1"}
             />

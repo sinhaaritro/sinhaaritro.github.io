@@ -1,4 +1,7 @@
 {
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -11,7 +14,8 @@
         "**/.settings": true,
         "**/.factorypath": true,
         "node_modules": true,
-        ".vscode": true
+        ".vscode": true,
+        "build": true
     },
     "explorerExclude.backup": null
 }

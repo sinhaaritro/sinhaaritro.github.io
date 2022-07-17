@@ -1,4 +1,4 @@
-import si from "simple-icons";
+import simpleIcons from "simple-icons";
 
 export interface ChipProps {
     icon?: string;
@@ -136,7 +136,7 @@ const Chip = ({ icon, text, color, variant = "small" }: ChipProps) => {
     const className = `flex items-center m-1 px-2 py-1 ${bgColor} ${textSize}  font-semibold ${fontColor} rounded-full ${svgColor}`;
 
     let iconSvg;
-    if (icon !== undefined) iconSvg = si.Get(icon);
+    if (icon !== undefined) iconSvg = simpleIcons.Get(icon);
 
     return (
         <div className={className}>

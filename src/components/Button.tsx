@@ -1,25 +1,26 @@
+import { concatObjectValues, useThemeContext } from "config/theme";
+import { WithClassName } from "lib/interfaces/withClassName";
 import React from "react";
 
 export interface ButtonProps
-    extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: "primary" | "secrondary" | "link";
-    children: string | React.ReactNode;
+    extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+        WithClassName<{}> {
+    variant?: "primary" | "secondary" | "link";
 }
 
-const buttonClass = {
-    primary: "p-2 capitalize hover:bg-slate-700 hover:text-slate-100",
-    secrondary:
-        "px-2 py-1 border-2 border-slate-700 rounded capitalize hover:bg-slate-700 hover:text-slate-100",
-    link: "py-1 rounded hover:underline",
-};
-
-const PrimaryButton = ({
+const Button = ({
     variant = "primary",
-    className,
+    className = "",
     children,
     ...props
 }: ButtonProps) => {
-    const finalClassName = `m-2 font-medium ${buttonClass[variant]} ${className}`;
+    const { theme } = useThemeContext();
+
+    const buttonClassNameFromTheme = concatObjectValues(
+        theme?.button?.[variant] || {}
+    );
+
+    const finalClassName = `m-2 font-medium ${buttonClassNameFromTheme} ${className}`;
     return (
         <button className={finalClassName} {...props}>
             {children}
@@ -27,4 +28,4 @@ const PrimaryButton = ({
     );
 };
 
-export default PrimaryButton;
+export default Button;

@@ -4,7 +4,7 @@ import skillsGroupData from "data/skill.json";
 
 const Skills = () => {
     return (
-        <section id="skills" className="p-4">
+        <section id="skills" className="p-4 mx-auto max-w-screen-xl">
             <section className="">
                 <Text
                     className="text-4xl font-semibold"

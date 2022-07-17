@@ -1,4 +1,4 @@
-import { ThemeContextProvider } from "theme";
+import { ThemeContextProvider } from "config/theme";
 import HomePage from "pages/Homepage";
 
 const App = () => {

@@ -1,14 +1,19 @@
 import AritroLogo from "assets/svg/AritroLogo";
-import PrimaryButton from "components/Button";
+import Button from "components/Button";
+import { WithClassName } from "lib/interfaces/withClassName";
 
-interface NavigationProps {
+type NavigationProps = WithClassName<{
     isNavMenuOpen: boolean;
     toggleNavMenuOpen: () => void;
-}
+}>;
 
-const Navigation = ({ isNavMenuOpen, toggleNavMenuOpen }: NavigationProps) => {
+const Navigation = ({
+    isNavMenuOpen,
+    toggleNavMenuOpen,
+    className,
+}: NavigationProps) => {
     return (
-        <header className="h-20 p-4 flex place-content-between">
+        <div className="flex place-content-between mx-auto max-w-screen-xl">
             <div>
                 <AritroLogo />
             </div>
@@ -16,33 +21,31 @@ const Navigation = ({ isNavMenuOpen, toggleNavMenuOpen }: NavigationProps) => {
             <nav>
                 <ul className="hidden lg:h-full lg:flex items-center">
                     <li>
-                        <PrimaryButton>
+                        <Button>
                             <a href="#home">Home</a>
-                        </PrimaryButton>
+                        </Button>
                     </li>
                     <li>
-                        <PrimaryButton>
+                        <Button>
                             <a href="#projects">Projects</a>
-                        </PrimaryButton>
+                        </Button>
                     </li>
                     <li>
-                        <PrimaryButton>
+                        <Button>
                             <a href="#skills">Skill Set</a>
-                        </PrimaryButton>
+                        </Button>
                     </li>
                     <li>
-                        <PrimaryButton>
+                        <Button>
                             <a href="#contact">Contact Me</a>
-                        </PrimaryButton>
+                        </Button>
                     </li>
                 </ul>
                 <div className="lg:hidden">
-                    <PrimaryButton onClick={toggleNavMenuOpen}>
-                        Menu
-                    </PrimaryButton>
+                    <Button onClick={toggleNavMenuOpen}>Menu</Button>
                 </div>
             </nav>
-        </header>
+        </div>
     );
 };
 
