@@ -4,42 +4,34 @@
         "img": "string",
         "tags": [
             {
-                "text": "MERN",
-                "color": "purple"
+                "text": "MERN"
             },
             {
-                "text": "Frontend",
-                "color": "violet"
+                "text": "Frontend"
             },
             {
-                "text": "Backend",
-                "color": "green"
+                "text": "Backend"
             }
         ],
         "techstack": [
             {
-                "icon": "react",
-                "color": "sky"
+                "icon": "react"
             },
             {
-                "icon": "typescript",
-                "color": "blue"
+                "icon": "typescript"
             },
             {
-                "icon": "mongodb",
-                "color": "green"
+                "icon": "mongodb"
             },
             {
-                "icon": "nodedotjs",
-                "color": "emerald"
+                "icon": "nodedotjs"
             },
             {
-                "icon": "express",
-                "color": "slate"
+                "icon": "express"
+         
             },
             {
-                "icon": "tailwindcss",
-                "color": "blue"
+                "icon": "tailwindcss"
             }
         ],
         "description": "A minimalist, markdown enabled note-taking app, where you can save notes, tag them and store them in an infinite hierarchal folder structure.",
@@ -55,34 +47,28 @@
         "img": "https://raw.githubusercontent.com/sinhaaritro/MatchFlix/master/screenshots/Main.png",
         "tags": [
             {
-                "text": "WebApp",
-                "color": "blue"
+                "text": "WebApp"
             },
             {
-                "text": "Frontend",
-                "color": "violet"
+                "text": "Frontend"
             },
             {
-                "text": "Netlify",
-                "color": "red"
+                "text": "Netlify"
             }
         ],
         "techstack": [
             {
-                "icon": "react",
-                "color": "sky"
+                "icon": "react"
             },
             {
-                "icon": "mui",
-                "color": "blue"
+                "icon": "mui"
             },
             {
-                "icon": "firebase",
-                "color": "yellow"
+                "icon": "firebase"
+   
             },
             {
-                "icon": "netlify",
-                "color": "teal"
+                "icon": "netlify"
             }
         ],
         "description": "A movie selector app, where multiple people can log in, make groups and select a movie that all of them like to watch based on common interests.",
@@ -98,30 +84,24 @@
         "img": "string",
         "tags": [
             {
-                "text": "Website",
-                "color": "blue"
+                "text": "Website"
             },
             {
-                "text": "Frontend",
-                "color": "violet"
+                "text": "Frontend"
             }
         ],
         "techstack": [
             {
-                "icon": "react",
-                "color": "sky"
+                "icon": "react"
             },
             {
-                "icon": "typescript",
-                "color": "blue"
+                "icon": "typescript"
             },
             {
-                "icon": "tailwindcss",
-                "color": "blue"
+                "icon": "tailwindcss"
             },
             {
-                "icon": "github",
-                "color": "neutral"
+                "icon": "github"
             }
         ],
         "description": "My current personal website in hopes of sharing a little snippet into my life and passions!",

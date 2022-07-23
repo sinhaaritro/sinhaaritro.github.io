@@ -30,13 +30,6 @@ const Skills = () => {
                     );
                 })}
             </section>
-            {/* <section>
-                <Text
-                    className="text-2xl font-semibold"
-                    children="Learning"
-                    htmlElement={"h1"}
-                />
-            </section> */}
         </section>
     );
 };

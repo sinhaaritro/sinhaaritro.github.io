@@ -35,6 +35,7 @@ export interface ColorScheme extends ColorShades {
 
 export interface ThemeAtom {
     button?: ButtonTypeTheme;
+    chip?: ChipTypeTheme;
 }
 
 export interface ButtonTypeTheme {
@@ -44,6 +45,19 @@ export interface ButtonTypeTheme {
 }
 
 export interface ButtonTheme {
+    generic?: string;
+    color?: string;
+    shadow?: string;
+    hover?: string;
+    focus?: string;
+    active?: string;
+}
+
+export interface ChipTypeTheme {
+    [key: string]: ChipTheme;
+}
+
+export interface ChipTheme {
     generic?: string;
     color?: string;
     shadow?: string;

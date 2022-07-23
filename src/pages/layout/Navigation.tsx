@@ -1,51 +1,34 @@
-import AritroLogo from "assets/svg/AritroLogo";
 import Button from "components/Button";
 import { WithClassName } from "lib/interfaces/withClassName";
 
-type NavigationProps = WithClassName<{
-    isNavMenuOpen: boolean;
-    toggleNavMenuOpen: () => void;
-}>;
+type NavigationProps = WithClassName<{}>;
 
-const Navigation = ({
-    isNavMenuOpen,
-    toggleNavMenuOpen,
-    className,
-}: NavigationProps) => {
+const Navigation = () => {
     return (
-        <div className="flex place-content-between mx-auto max-w-screen-xl">
-            <div>
-                <AritroLogo />
-            </div>
-
-            <nav>
-                <ul className="hidden lg:h-full lg:flex items-center">
-                    <li>
-                        <Button>
-                            <a href="#home">Home</a>
-                        </Button>
-                    </li>
-                    <li>
-                        <Button>
-                            <a href="#projects">Projects</a>
-                        </Button>
-                    </li>
-                    <li>
-                        <Button>
-                            <a href="#skills">Skill Set</a>
-                        </Button>
-                    </li>
-                    <li>
-                        <Button>
-                            <a href="#contact">Contact Me</a>
-                        </Button>
-                    </li>
-                </ul>
-                <div className="lg:hidden">
-                    <Button onClick={toggleNavMenuOpen}>Menu</Button>
-                </div>
-            </nav>
-        </div>
+        <nav className="absolute top-16 right-16 bg-yellow-500 lg:static">
+            <ul className="flex flex-col bg-yellow-500 lg:flex-row lg:h-full lg:bg-inherit items-center">
+                <li>
+                    <Button>
+                        <a href="#home">Home</a>
+                    </Button>
+                </li>
+                <li>
+                    <Button>
+                        <a href="#projects">Projects</a>
+                    </Button>
+                </li>
+                <li>
+                    <Button>
+                        <a href="#skills">Skill Set</a>
+                    </Button>
+                </li>
+                <li>
+                    <Button>
+                        <a href="#contact">Contact Me</a>
+                    </Button>
+                </li>
+            </ul>
+        </nav>
     );
 };
 

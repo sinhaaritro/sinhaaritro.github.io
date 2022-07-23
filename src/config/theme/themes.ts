@@ -61,4 +61,94 @@ export const defaultLightTheme: Theme = {
             hover: "",
         },
     },
+    chip: {
+        slate: {
+            color: "bg-slate-100 text-slate-800 fill-slate-800",
+            hover: "",
+        },
+        gray: {
+            color: "bg-gray-100 text-gray-800 fill-gray-800",
+            hover: "",
+        },
+        zinc: {
+            color: "bg-zinc-100 text-zinc-800 fill-zinc-800",
+            hover: "",
+        },
+        neutral: {
+            color: "bg-neutral-100 text-neutral-800 fill-neutral-800",
+            hover: "",
+        },
+        stone: {
+            color: "bg-stone-100 text-stone-800 fill-stone-800",
+            hover: "",
+        },
+        red: {
+            color: "bg-red-100 text-red-800 fill-red-800",
+            hover: "",
+        },
+        orange: {
+            color: "bg-orange-100 text-orange-800 fill-orange-800",
+            hover: "",
+        },
+        amber: {
+            color: "bg-amber-100 text-amber-800 fill-amber-800",
+            hover: "",
+        },
+        yellow: {
+            color: "bg-yellow-100 text-yellow-800 fill-yellow-800",
+            hover: "",
+        },
+        lime: {
+            color: "bg-lime-100 text-lime-800 fill-lime-800",
+            hover: "",
+        },
+        green: {
+            color: "bg-green-100 text-green-800 fill-green-800",
+            hover: "",
+        },
+        emerald: {
+            color: "bg-emerald-100 text-emerald-800 fill-emerald-800",
+            hover: "",
+        },
+        teal: {
+            color: "bg-teal-100 text-teal-800 fill-teal-800",
+            hover: "",
+        },
+        cyan: {
+            color: "bg-cyan-100 text-cyan-800 fill-cyan-800",
+            hover: "",
+        },
+        sky: {
+            color: "bg-sky-100 text-sky-800 fill-sky-800",
+            hover: "",
+        },
+        blue: {
+            color: "bg-blue-100 text-blue-800 fill-blue-800",
+            hover: "",
+        },
+        indigo: {
+            color: "bg-indigo-100 text-indigo-800 fill-indigo-800",
+            hover: "",
+        },
+        violet: {
+            color: "bg-violet-100 text-violet-800 fill-violet-800",
+            hover: "",
+        },
+        purple: {
+            color: "bg-purple-100 text-purple-800 fill-purple-800",
+            hover: "",
+        },
+        fuchsia: {
+            color: "bg-fuchsia-100 text-fuchsia-800 fill-fuchsia-800",
+            hover: "",
+        },
+        pink: {
+            color: "bg-pink-100 text-pink-800 fill-pink-800",
+            hover: "",
+        },
+        rose: {
+            color: "bg-rose-100 text-rose-800 fill-rose-800",
+            hover: "",
+        },
+    },
 };

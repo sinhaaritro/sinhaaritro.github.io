@@ -1,0 +1,15 @@
+import AboutMe from "./AboutMe";
+import Contact from "./Contact";
+import Projects from "./Projects";
+
+const Main = () => {
+    return (
+        <main className="">
+            <AboutMe />
+            <Projects />
+            <Contact />
+        </main>
+    );
+};
+
+export default Main;

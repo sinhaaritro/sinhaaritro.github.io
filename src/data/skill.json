@@ -4,48 +4,39 @@
         "skills": [
             {
                 "icon": "python",
-                "text": "Python",
-                "color": "blue"
+                "text": "Python"
             },
             {
                 "icon": "html5",
-                "text": "HTML",
-                "color": "orange"
+                "text": "HTML"
             },
             {
                 "icon": "css3",
-                "text": "CSS",
-                "color": "blue"
+                "text": "CSS"
             },
             {
                 "icon": "javascript",
-                "text": "JavaScript",
-                "color": "yellow"
+                "text": "JavaScript"
             },
             {
                 "icon": "typescript",
-                "text": "TypeScript",
-                "color": "blue"
+                "text": "TypeScript"
             },
             {
                 "icon": "php",
-                "text": "Php",
-                "color": "violet"
+                "text": "Php"
             },
             {
                 "icon": "cplusplus",
-                "text": "C++",
-                "color": "blue"
+                "text": "C++"
             },
             {
                 "icon": "dart",
-                "text": "Dart",
-                "color": "sky"
+                "text": "Dart"
             },
             {
                 "icon": "mongodb",
-                "text": "Mongo DB",
-                "color": "green"
+                "text": "Mongo DB"
             }
         ]
     },
@@ -54,42 +45,34 @@
         "skills": [
             {
                 "icon": "react",
-                "text": "React",
-                "color": "sky"
+                "text": "React"
             },
             {
                 "icon": "nodedotjs",
-                "text": "NodeJS",
-                "color": "emerald"
+                "text": "NodeJS"
             },
             {
                 "icon": "express",
-                "text": "Express",
-                "color": "slate"
+                "text": "Express"
             },
             {
                 "icon": "tailwindcss",
-                "text": "Tailwind",
-                "color": "blue"
+                "text": "Tailwind"
             },
             {
                 "icon": "bootstrap",
-                "text": "Bootstrap",
-                "color": "purple"
+                "text": "Bootstrap"
             },
             {
                 "icon": "mui",
-                "text": "MaterialUI",
-                "color": "blue"
+                "text": "MaterialUI"
             },
             {
-                "text": "Rest API",
-                "color": "fuchsia"
+                "text": "Rest API"
             },
             {
                 "icon": "flutter",
-                "text": "Flutter",
-                "color": "indigo"
+                "text": "Flutter"
             }
         ]
     },
@@ -98,52 +81,42 @@
         "skills": [
             {
                 "icon": "git",
-                "text": "Git",
-                "color": "orange"
+                "text": "Git"
             },
             {
                 "icon": "github",
-                "text": "Github",
-                "color": "neutral"
+                "text": "Github"
             },
             {
                 "icon": "visualstudiocode",
-                "text": "Visual Studio Code",
-                "color": "blue"
+                "text": "Visual Studio Code"
             },
             {
                 "icon": "androidstudio",
-                "text": "Android Studio",
-                "color": "green"
+                "text": "Android Studio"
             },
             {
                 "icon": "firebase",
-                "text": "Firebase",
-                "color": "yellow"
+                "text": "Firebase"
             },
             {
                 "icon": "netlify",
-                "text": "Netlify",
-                "color": "teal"
+                "text": "Netlify"
             },
             {
                 "icon": "figma",
-                "text": "Figma",
-                "color": "orange"
+                "text": "Figma"
             },
             {
                 "icon": "notion",
-                "text": "Notion",
-                "color": "neutral"
+                "text": "Notion"
             },
             {
                 "icon": "postman",
-                "text": "Postman",
-                "color": "orange"
+                "text": "Postman"
             },
             {
-                "text": "ThunderClient",
-                "color": "neutral"
+                "text": "ThunderClient"
             }
         ]
     }

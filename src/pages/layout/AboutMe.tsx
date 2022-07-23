@@ -23,7 +23,7 @@ const AboutMe = () => {
     return (
         <section
             id="about-me"
-            className="m-8 mx-auto max-w-screen-xl aspect-video"
+            className="m-8 mx-auto max-w-screen-xl aspect-video z-0"
         >
             <section
                 id="about-me-main"
