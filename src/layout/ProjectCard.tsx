@@ -1,7 +1,7 @@
-import Chip from "components/Chip";
 import Button from "components/Button";
-import openLinkInNewTab from "lib/hooks/openLinkInNewTab";
+import Chip from "components/Chip";
 import { ProjectInterface } from "data/projects";
+import openLinkInNewTab from "lib/hooks/openLinkInNewTab";
 
 interface ProjectCardProps extends ProjectInterface {}
 
