@@ -1,32 +1,35 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useMemo, useState } from "react";
 import {
-    ThemeContextInterface,
-    ThemeContextProviderProps,
-    themeTypes,
+  ThemeContextInterface,
+  ThemeContextProviderProps,
+  ThemeTypes,
 } from "./app-theme.interface";
 import { defaultLightTheme } from "./themes";
 
 export const ThemeContext = createContext<ThemeContextInterface>({
-    theme: null,
-    changeTheme: null,
+  theme: null,
+  changeTheme: null,
 });
 
-export const useThemeContext = () => {
-    return useContext(ThemeContext);
-};
+export const useThemeContext = () => useContext(ThemeContext);
 
-const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
-    const [theme, setTheme] = useState(defaultLightTheme);
+function ThemeContextProvider({ children }: ThemeContextProviderProps) {
+  const [theme, setTheme] = useState(defaultLightTheme);
 
-    const changeTheme = (type: themeTypes) => {
-        if (type === "light") setTheme(defaultLightTheme);
-    };
+  const changeTheme = (type: ThemeTypes) => {
+    if (type === "light") setTheme(defaultLightTheme);
+  };
 
-    return (
-        <ThemeContext.Provider value={{ theme, changeTheme }}>
-            {children}
-        </ThemeContext.Provider>
-    );
-};
+  const ThemeContextProviderValue = useMemo(
+    () => ({ theme, changeTheme }),
+    [theme],
+  );
+
+  return (
+    <ThemeContext.Provider value={ThemeContextProviderValue}>
+      {children}
+    </ThemeContext.Provider>
+  );
+}
 
 export default ThemeContextProvider;

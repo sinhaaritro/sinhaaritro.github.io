@@ -7,15 +7,15 @@ import React from "react";
 // }
 
 type SubTitleProps<T extends keyof JSX.IntrinsicElements> = {
-    htmlElement?: T;
+  htmlElement?: T;
 } & JSX.IntrinsicElements[T];
 
-const Text = <T extends keyof JSX.IntrinsicElements>({
-    htmlElement,
-    children,
-    ...props
-}: SubTitleProps<T>) => {
-    return React.createElement(htmlElement || "div", { ...props }, children);
-};
+function Text<T extends keyof JSX.IntrinsicElements>({
+  htmlElement,
+  children,
+  ...props
+}: SubTitleProps<T>) {
+  return React.createElement(htmlElement || "div", { ...props }, children);
+}
 
 export default Text;
