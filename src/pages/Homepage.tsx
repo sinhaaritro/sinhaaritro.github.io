@@ -7,7 +7,10 @@ function HomePage() {
   const { theme } = useThemeContext();
 
   return (
-    <div id="home" className={`${theme?.primary?.[300]} text-neutral-900`}>
+    <div
+      id="home"
+      className={`font-nunito ${theme?.primary?.[300]} text-neutral-900`}
+    >
       <Header />
       <Main />
       <Footer />

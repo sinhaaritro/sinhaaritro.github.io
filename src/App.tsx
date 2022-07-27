@@ -3,11 +3,9 @@ import HomePage from "pages/Homepage";
 
 function App() {
   return (
-    <div className="app">
-      <ThemeContextProvider>
-        <HomePage />
-      </ThemeContextProvider>
-    </div>
+    <ThemeContextProvider>
+      <HomePage />
+    </ThemeContextProvider>
   );
 }
 

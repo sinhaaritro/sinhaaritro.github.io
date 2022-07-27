@@ -1,11 +1,12 @@
 import { concatObjectValues, useThemeContext } from "config/theme";
+import { ButtonVariants } from "config/theme/theme.interface";
 import { WithClassName } from "lib/interfaces/withClassName";
 import React from "react";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     WithClassName<{}> {
-  variant?: "primary" | "secondary" | "link";
+  variant?: ButtonVariants;
 }
 
 function Button({
@@ -20,9 +21,12 @@ function Button({
     theme?.button?.[variant] || {},
   );
 
-  const finalClassName = `m-2 font-medium ${buttonClassNameFromTheme} ${className}`;
   return (
-    <button className={finalClassName} type="button" {...props}>
+    <button
+      className={buttonClassNameFromTheme + className}
+      type="button"
+      {...props}
+    >
       {children}
     </button>
   );

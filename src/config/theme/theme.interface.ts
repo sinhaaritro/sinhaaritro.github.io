@@ -38,11 +38,11 @@ export interface ThemeAtom {
   chip?: ChipTypeTheme;
 }
 
-export interface ButtonTypeTheme {
-  primary?: ButtonTheme;
-  secondary?: ButtonTheme;
-  link?: ButtonTheme;
-}
+export type ButtonTypeTheme = {
+  [key in ButtonVariants]?: ButtonTheme;
+};
+
+export type ButtonVariants = "primary" | "secondary" | "link" | "navLink";
 
 export interface ButtonTheme {
   generic?: string;

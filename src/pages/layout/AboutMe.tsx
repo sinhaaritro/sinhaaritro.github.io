@@ -21,15 +21,12 @@ function AboutMe() {
   ];
 
   return (
-    <section
-      id="about-me"
-      className="m-8 mx-auto max-w-screen-xl aspect-video "
-    >
+    <section id="about-me" className="m-8 px-2 mx-auto max-w-screen-xl">
       <section
         id="about-me-main"
-        className={`flex flex-col place-content-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]}`}
+        className={`flex flex-col place-content-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]} aspect-video`}
       >
-        <div className="grow flex flex-col  place-content-around">
+        <div className="grow flex flex-col place-content-around">
           <div className="flex mx-auto drop-shadow-none">
             <AritroLogo width="200" height="200" />
           </div>
@@ -106,7 +103,7 @@ function AboutMe() {
         <div
           className={`border-y border-neutral-500 p-2 font-medium text-3xl text-center ${theme?.primary?.[200]}`}
         >
-          Skill
+          Skills
         </div>
         <div className="p-12 flex flex-wrap place-content-center gap-2 text-m text-center">
           {skillList.map((skill) => (

@@ -51,12 +51,17 @@ const defaultLightTheme: Theme = {
       hover: "hover:bg-neutral-700 hover:text-neutral-100",
     },
     secondary: {
-      generic: "px-2 py-1 border-2 border-neutral-700 rounded capitalize",
-      color: "",
+      generic: "m-2 font-medium px-2 py-1 border-2 rounded capitalize",
+      color: "border-neutral-700",
       hover: "hover:bg-neutral-700 hover:text-neutral-100",
     },
+    navLink: {
+      generic: "m-1 font-medium p-2 rounded w-full",
+      color: "text-neutral-900",
+      hover: "hover:bg-neutral-200",
+    },
     link: {
-      generic: "py-1 rounded hover:underline",
+      generic: "py-1 font-medium rounded hover:underline",
       color: "",
       hover: "",
     },
