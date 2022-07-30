@@ -1,6 +1,9 @@
+import { WithClassName } from "lib/interfaces/withClassName";
 import SimpleIcon from "../components/SimpleIcon";
 
-function SocialIcons() {
+type SocialIconsProps = WithClassName<{ iconClassname?: string }>;
+
+function SocialIcons({ iconClassname, className }: SocialIconsProps) {
   const iconSlug: Array<string> = [
     "Discord",
     "Facebook",
@@ -10,12 +13,14 @@ function SocialIcons() {
   ];
 
   return (
-    <div className="flex gap-2 place-content-center px-2 py-1 font-semibold rounded-full">
+    <div
+      className={`flex gap-3 place-content-center rounded-full ${className}`}
+    >
       {iconSlug.map((icon) => (
         <SimpleIcon
           key={icon}
           iconName={icon}
-          className="bg-neutral-700 fill-neutral-200 rounded p-1 h-10 w-10 "
+          className={`bg-neutral-700 fill-neutral-200 rounded p-1 ${iconClassname}`}
         />
       ))}
     </div>

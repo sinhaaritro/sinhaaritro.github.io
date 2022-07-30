@@ -1,4 +1,4 @@
-import Text from "components/Text";
+import SubTitle from "components/Typography/SubTitle";
 import { useThemeContext } from "config/theme";
 import { ProjectsInterface } from "data/projects";
 import projectData from "data/projects.json";
@@ -12,12 +12,10 @@ function Projects() {
       id="projects"
       className={`m-8 mx-auto max-w-screen-xl flex flex-col place-content-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]} relative z-10`}
     >
-      <Text
-        className={`text-4xl font-semibold rounded-t-2xl border-b border-neutral-400 p-2 text-center ${theme?.primary?.[200]}`}
-        htmlElement="h1"
-      >
+      <SubTitle className="rounded-t-2xl border-b border-neutral-400 p-2 text-4xl">
         Projects
-      </Text>
+      </SubTitle>
+
       <div className="flex flex-wrap justify-center z-10">
         {projects.map((project) => (
           <ProjectCard

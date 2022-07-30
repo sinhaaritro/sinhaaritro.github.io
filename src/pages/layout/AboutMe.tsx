@@ -1,5 +1,7 @@
 import AritroLogo from "assets/svg/AritroLogo";
 import Chip from "components/Chip";
+import KeyValuePair from "components/Typography/KeyValuePair";
+import SubTitle from "components/Typography/SubTitle";
 import { useThemeContext } from "config/theme";
 import SocialIcons from "layout/SocialIcons";
 
@@ -21,57 +23,51 @@ function AboutMe() {
   ];
 
   return (
-    <section id="about-me" className="m-8 px-2 mx-auto max-w-screen-xl">
+    <section id="about-me" className="my-3 px-2 mx-auto aspect-video">
       <section
         id="about-me-main"
-        className={`flex flex-col place-content-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]} aspect-video`}
+        className={`flex flex-col justify-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]} `}
       >
-        <div className="grow flex flex-col place-content-around">
-          <div className="flex mx-auto drop-shadow-none">
-            <AritroLogo width="200" height="200" />
+        <div className="flex flex-col gap-6 justify-around px-8 py-12">
+          <div className="flex mx-auto">
+            <AritroLogo width="100" height="100" />
           </div>
 
-          <p className="flex place-content-around text-7xl font-bold drop-shadow-none">
-            Aritro Sinha
-          </p>
-          <div className="flex place-content-around px-4">
-            <p className="text-2xl">Web Developer</p>
-            <p className="text-2xl">Software Developer</p>
-            <p className="text-2xl">Game Developer</p>
+          <p className="text-5xl text-center font-bold">Aritro Sinha</p>
+          <div className="flex flex-col gap-3 justify-around text-lg text-center">
+            <p>Web Developer</p>
+            <p>Software Developer</p>
+            <p>Game Developer</p>
           </div>
-          <div className="flex place-content-around">
-            <SocialIcons />
-          </div>
+          <SocialIcons />
         </div>
-        <div className="flex border-t border-neutral-500 text-xl">
-          <p className="w-1/2 p-2 flex place-content-center border-r border-neutral-500">
+        <div className="flex border-t border-neutral-500 text-base">
+          <p className="w-1/2 p-2 text-center border-r border-neutral-500">
             Download Resume
           </p>
-          <p className="w-1/2 p-2 flex place-content-center ">Contact Me</p>
+          <p className="w-1/2 p-2 text-center">Contact Me</p>
         </div>
       </section>
       <section
         id="about-me-details"
-        className={`mx-5 flex flex-col place-content-around rounded-b-2xl drop-shadow ${theme?.primary?.[100]}`}
+        className={`mx-4 flex flex-col justify-around rounded-b-2xl drop-shadow ${theme?.primary?.[100]}`}
       >
-        <div
-          className={`border-y border-neutral-500 p-2 font-medium text-3xl text-center ${theme?.primary?.[200]}`}
-        >
+        <SubTitle className="border-y border-neutral-500 p-1">
           About Me
-        </div>
-        <div className="p-6 px-12 flex flex-col gap-2 text-m text-center">
-          <p className="">
+        </SubTitle>
+        <div className="py-5 px-3 flex flex-col gap-6 text-center text-base">
+          <p>
             Hi, I am generalist programmer and designer. I love to find out how
             all kinds software works and use them in a creative way.
           </p>
-          <p className="">
+          <p>
             I first became interested in how computer works when I played
             computer games in my childhood and before I knew it, I was already
             interested in finding out how games work. One thing lead to another
             and now I love making games, apps, websites and design other
             softwares.
           </p>
-          <p className="">
+          <p>
             My interest in computer and technology helped me get better and
             proficient in learning new things in computer. At first I was only
             interested in learning the programming aspects of it, but my focus
@@ -79,33 +75,32 @@ function AboutMe() {
           </p>
         </div>
 
-        <div
-          className={`border-y border-neutral-500 p-2 font-medium text-3xl text-center ${theme?.primary?.[200]}`}
-        >
-          Work
-        </div>
-        <div className="p-6 flex flex-col gap-2 text-m text-center">
-          <p className="font-medium">Hyland (2022 - Present)</p>
-          <p className="">Intern</p>
+        <SubTitle className="border-y border-neutral-500 p-1">
+          Experience
+        </SubTitle>
+
+        <div className="py-5 px-3 flex flex-col gap-6 text-center">
+          <KeyValuePair keyItem="Hyland (2022 - Present)" valueItem="Intern" />
         </div>
 
-        <div
-          className={`border-y border-neutral-500 p-2 font-medium text-3xl text-center ${theme?.primary?.[200]}`}
-        >
+        <SubTitle className="border-y border-neutral-500 p-1">
           Education
+        </SubTitle>
+
+        <div className="py-5 px-3 flex flex-col gap-6 text-center">
+          <KeyValuePair
+            keyItem="BCA(2017 - 2020)"
+            valueItem="Techno India University"
+          />
+          <KeyValuePair
+            keyItem="MCA (2020 - 2022)"
+            valueItem="Netaji Subhash Engineering College"
+          />
         </div>
-        <div className="p-6 flex flex-col gap-2 text-m text-center">
-          <p className="font-medium">BCA (2017 - 2020)</p>
-          <p className="">Techno India University</p>
-          <p className="font-medium">MCA (2020 - 2022)</p>
-          <p className="">Netaji Subhash Engineering College</p>
-        </div>
-        <div
-          className={`border-y border-neutral-500 p-2 font-medium text-3xl text-center ${theme?.primary?.[200]}`}
-        >
-          Skills
-        </div>
-        <div className="p-12 flex flex-wrap place-content-center gap-2 text-m text-center">
+
+        <SubTitle className="border-y border-neutral-500 p-1">Skills</SubTitle>
+
+        <div className="p-12 flex flex-wrap justify-around gap-2 text-m text-center">
           {skillList.map((skill) => (
             <Chip
               key={skill.icon}

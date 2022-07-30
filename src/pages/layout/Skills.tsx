@@ -1,5 +1,5 @@
 import Chip from "components/Chip";
-import Text from "components/Text";
+import Text from "components/Typography/Text";
 import skillsGroupData from "data/skill.json";
 
 function Skills() {

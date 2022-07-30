@@ -30,15 +30,11 @@ function ProjectCard({
         </div>
         <div className="bg-slate-700 my-2 h-px w-full" />
         <div className="flex flex-wrap ">
-          {techstack && (
-            <>
-              {techstack.map((tech) => (
-                <Chip key={tech.text} text={tech.text} icon={tech.icon} />
-              ))}
-              <div className="bg-slate-700 my-2 h-px w-full" />
-            </>
-          )}
+          {techstack.map((tech) => (
+            <Chip key={tech.text} text={tech.text} icon={tech.icon} />
+          ))}
         </div>
+        <div className="bg-slate-700 my-2 h-px w-full" />
         <p className="py-2">{description}</p>
         {contributions && (
           <>

@@ -1,6 +1,6 @@
 import Button from "components/Button";
 import Chip from "components/Chip";
-import Text from "components/Text";
+import Text from "components/Typography/Text";
 import { useThemeContext } from "config/theme";
 import contactData from "data/contact.json";
 import SocialIcons from "layout/SocialIcons";

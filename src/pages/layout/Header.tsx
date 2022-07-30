@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <header className={`relative drop-shadow-xl ${theme?.neutral?.[600]} z-50`}>
-      <div className="flex justify-between mx-auto max-w-screen-xl">
+      <div className="flex justify-between mx-auto max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl">
         <div className="flex flex-row my-auto p-2 px-4">
           <AritroLogo />
         </div>
