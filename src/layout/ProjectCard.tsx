@@ -17,27 +17,27 @@ function ProjectCard({ project }: ProjectCardProps) {
   } = { ...project };
 
   return (
-    <div className="relative group m-8 w-80 text-center bg-slate-900 rounded-md bg-inherit">
-      <div className="h-80 bg-slate-400 origin-right transition ease-in-out duration-500 group-hover:-translate-y-40 shadow-lg shadow-slate-900 group-hover:z-20 rounded-t-md">
-        <img className="h-80 w-80 rounded-md" alt="project-icon" src={img} />
-        <p className="flex justify-center absolute inset-x-0 bottom-0 h-12 p-2 text-2xl bg-slate-800 text-slate-200 rounded-b-md group-hover:rounded-none">
+    <div className="relative group m-1 text-center">
+      <div className="h-80 w-80 bg-neutral-400 origin-bottom transition ease-in-out duration-500 group-hover:-translate-y-40 shadow-lg shadow-neutral-700 group-hover:z-20 rounded-2xl">
+        <img className="h-80 w-80 rounded-2xl" alt="project-icon" src={img} />
+        <p className="absolute inset-x-0 bottom-0 p-2 text-2xl bg-neutral-700 text-neutral-100 rounded-b-2xl group-hover:rounded-none">
           {title}
         </p>
       </div>
-      <div className="absolute w-80 p-4 bg-slate-50 origin-top transition ease-in-out duration-500 shadow-lg shadow-slate-900 scale-y-0  group-hover:block group-hover:-translate-y-40 group-hover:scale-y-100 group-hover:z-20 rounded-b-md">
-        <div className="flex flex-wrap ">
+      <div className="absolute w-80 p-3 bg-neutral-50 origin-top transition ease-in-out duration-500 shadow-lg shadow-neutral-700 scale-y-0  group-hover:flex flex-col group-hover:-translate-y-40 group-hover:scale-y-100 group-hover:z-20 rounded-b-2xl  gap-3">
+        <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <Chip key={tag.icon} icon={tag.icon} text={tag.text} />
           ))}
         </div>
-        <div className="bg-slate-700 my-2 h-px w-full" />
-        <div className="flex flex-wrap ">
+        <div className="bg-neutral-500 h-px w-full" />
+        <div className="flex flex-wrap gap-2">
           {techstack.map((tech) => (
             <Chip key={tech.text} text={tech.text} icon={tech.icon} />
           ))}
         </div>
-        <div className="bg-slate-700 my-2 h-px w-full" />
-        <p className="py-2">{description}</p>
+        <div className="bg-neutral-500 h-px w-full" />
+        <p className="text-neutral-800">{description}</p>
         {contributions && (
           <>
             <p className="font-medium">My Contributions:</p>
@@ -48,15 +48,17 @@ function ProjectCard({ project }: ProjectCardProps) {
             </ul>
           </>
         )}
-        {externalLinks.map((externalLink) => (
-          <Button
-            key={externalLink.name}
-            variant="secondary"
-            onClick={() => openLinkInNewTab(externalLink.url)}
-          >
-            {externalLink.name}
-          </Button>
-        ))}
+        <div className="flex flex-wrap gap-2 justify-center">
+          {externalLinks.map((externalLink) => (
+            <Button
+              key={externalLink.name}
+              variant="secondary"
+              onClick={() => openLinkInNewTab(externalLink.url)}
+            >
+              {externalLink.name}
+            </Button>
+          ))}
+        </div>
       </div>
     </div>
   );

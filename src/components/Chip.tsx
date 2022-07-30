@@ -16,7 +16,7 @@ function Chip({ icon, text, variant = "small" }: ChipProps) {
   );
 
   const textSize = variant === "small" ? "text-md" : "text-lg";
-  const className = `flex items-center m-1 px-2 py-1 ${chipClassNameFromTheme} font-semibold $ rounded-full ${textSize}`;
+  const className = `flex items-center px-2 py-1 ${chipClassNameFromTheme} font-semibold $ rounded-full ${textSize} border border-red-500`;
 
   let iconSvg;
   if (icon !== undefined) iconSvg = simpleIcons.Get(icon);

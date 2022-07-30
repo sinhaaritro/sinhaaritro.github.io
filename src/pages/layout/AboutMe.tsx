@@ -1,5 +1,6 @@
 import AritroLogo from "assets/svg/AritroLogo";
 import Chip from "components/Chip";
+import { SubTitle, KeyValuePair } from "components/Typography";
 import { useThemeContext } from "config/theme";
 import SocialIcons from "layout/SocialIcons";
 
@@ -50,7 +51,7 @@ function AboutMe() {
         id="about-me-details"
         className={`mx-4 flex flex-col justify-around rounded-b-2xl drop-shadow ${theme?.primary?.[100]}`}
       >
-        {/* <SubTitle className="border-y border-neutral-500 p-1">
+        <SubTitle className="border-y border-neutral-500 p-1">
           About Me
         </SubTitle>
         <div className="py-5 px-3 flex flex-col gap-6 text-center text-base">
@@ -96,7 +97,7 @@ function AboutMe() {
           />
         </div>
 
-        <SubTitle className="border-y border-neutral-500 p-1">Skills</SubTitle> */}
+        <SubTitle className="border-y border-neutral-500 p-1">Skills</SubTitle>
 
         <div className="p-12 flex flex-wrap justify-around gap-2 text-m text-center">
           {skillList.map((skill) => (

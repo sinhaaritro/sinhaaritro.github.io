@@ -46,17 +46,17 @@ const defaultLightTheme: Theme = {
   },
   button: {
     primary: {
-      generic: "m-2 font-medium p-2 capitalize",
+      generic: "font-medium p-2 capitalize",
       color: "",
       hover: "hover:bg-neutral-700 hover:text-neutral-100",
     },
     secondary: {
-      generic: "m-2 font-medium px-2 py-1 border-2 rounded capitalize",
+      generic: "font-medium px-2 py-1 border-2 rounded capitalize",
       color: "border-neutral-700",
       hover: "hover:bg-neutral-700 hover:text-neutral-100",
     },
     navLink: {
-      generic: "m-1 font-medium p-2 rounded w-full",
+      generic: "font-medium p-2 rounded w-full",
       color: "text-neutral-900",
       hover: "hover:bg-neutral-200",
     },
