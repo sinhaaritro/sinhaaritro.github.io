@@ -8,12 +8,12 @@ export type SimpleIconProps = WithClassName<{
   color?: string;
 }>;
 
-function SimpleIcon({ iconName, className }: SimpleIconProps) {
+function SimpleIcon({ iconName, className = "" }: SimpleIconProps) {
   // @ts-ignore:
   const icon: SimpleIconInterface = icons[`si${iconName}`];
 
   return (
-    <span
+    <div
       className={`h-6 w-6 ${className}`}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: icon.svg }}

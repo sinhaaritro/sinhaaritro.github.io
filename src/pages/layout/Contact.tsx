@@ -1,44 +1,25 @@
-import Button from "components/Button";
-import Chip from "components/Chip";
-import Text from "components/Typography/Text";
+import { SubTitle } from "components/Typography";
 import { useThemeContext } from "config/theme";
-import contactData from "data/contact.json";
 import SocialIcons from "layout/SocialIcons";
-import openLinkInNewTab from "lib/hooks/openLinkInNewTab";
 
 function Contact() {
   const { theme } = useThemeContext();
   return (
     <section
       id="contact"
-      className={`m-8 mx-auto max-w-screen-xl flex flex-col place-content-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]} `}
+      className={`my-3 mx-2 max-w-screen-xl flex flex-col place-content-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]} `}
     >
-      <Text
-        className={`text-4xl font-semibold rounded-t-2xl border-b border-neutral-500 p-2 text-center ${theme?.primary?.[200]}`}
-        htmlElement="h1"
-      >
+      <SubTitle className="rounded-t-2xl border-b border-neutral-400 p-2 text-4xl">
         Contact
-      </Text>
-      <div className="py-4 px-2 text-center text-lg">
-        <div className="">
+      </SubTitle>
+      <div className="p-3 flex flex-col gap-4 text-center">
+        <p>
           Have a project in mind? Feel free to contact me at
           sinhaaritro@gmail.com. I'll try to respond as quick as I can!
-        </div>
-        <div className="">
-          I'm also available on some social media platforms:
-        </div>
+        </p>
+        <p>I'm also available on some social media platforms:</p>
+        <div className="bg-neutral-500 h-px w-full" />
         <SocialIcons />
-        <div className="flex flex-wrap place-content-center normal-case">
-          {contactData.map((contact) => (
-            <Button
-              key={contact.link}
-              variant="link"
-              onClick={() => openLinkInNewTab(contact.link)}
-            >
-              <Chip icon={contact.icon} text={contact.text} />
-            </Button>
-          ))}
-        </div>
       </div>
     </section>
   );
