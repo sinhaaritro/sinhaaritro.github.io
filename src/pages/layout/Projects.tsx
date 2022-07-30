@@ -10,24 +10,15 @@ function Projects() {
   return (
     <section
       id="projects"
-      className={`m-8 mx-auto max-w-screen-xl flex flex-col place-content-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]} relative z-10`}
+      className={`my-3 mx-2 max-w-screen-xl flex flex-col place-content-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]} relative z-10`}
     >
       <SubTitle className="rounded-t-2xl border-b border-neutral-400 p-2 text-4xl">
         Projects
       </SubTitle>
 
-      <div className="flex flex-wrap justify-center z-10">
+      <div className="p-3 flex flex-wrap gap-4 justify-center z-10">
         {projects.map((project) => (
-          <ProjectCard
-            key={project.title}
-            title={project.title}
-            img={project.img}
-            tags={project.tags}
-            techstack={project.techstack}
-            description={project.description}
-            contributions={project.contributions}
-            externalLinks={project.externalLinks}
-          />
+          <ProjectCard key={project.title} project={project} />
         ))}
       </div>
     </section>

@@ -3,17 +3,19 @@ import Chip from "components/Chip";
 import { ProjectInterface } from "data/projects";
 import openLinkInNewTab from "lib/hooks/openLinkInNewTab";
 
-interface ProjectCardProps extends ProjectInterface {}
+type ProjectCardProps = { project: ProjectInterface };
 
-function ProjectCard({
-  title,
-  img,
-  tags,
-  techstack,
-  description,
-  contributions,
-  externalLinks,
-}: ProjectCardProps) {
+function ProjectCard({ project }: ProjectCardProps) {
+  const {
+    title,
+    img,
+    tags,
+    techstack,
+    description,
+    contributions,
+    externalLinks,
+  } = { ...project };
+
   return (
     <div className="relative group m-8 w-80 text-center bg-slate-900 rounded-md bg-inherit">
       <div className="h-80 bg-slate-400 origin-right transition ease-in-out duration-500 group-hover:-translate-y-40 shadow-lg shadow-slate-900 group-hover:z-20 rounded-t-md">
