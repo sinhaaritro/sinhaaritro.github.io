@@ -1,13 +1,11 @@
 import { SubTitle } from "components/Typography";
-import { useThemeContext } from "config/theme";
 import SocialIcons from "layout/SocialIcons";
 
 function Contact() {
-  const { theme } = useThemeContext();
   return (
     <section
       id="contact"
-      className={`my-3 mx-2 max-w-screen-xl flex flex-col place-content-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]} `}
+      className="my-3 mx-2 max-w-screen-xl flex flex-col place-content-around h-full grow rounded-2xl drop-shadow bg-primary-100"
     >
       <SubTitle className="rounded-t-2xl border-b border-neutral-400 p-2 text-4xl">
         Contact

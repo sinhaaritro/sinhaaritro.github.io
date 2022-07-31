@@ -15,22 +15,22 @@
     ],
     "techstack": [
       {
-        "icon": "react"
+        "icon": "React"
       },
       {
-        "icon": "typescript"
+        "icon": "Typescript"
       },
       {
-        "icon": "mongodb"
+        "icon": "Mongodb"
       },
       {
-        "icon": "nodedotjs"
+        "icon": "Nodedotjs"
       },
       {
-        "icon": "express"
+        "icon": "Express"
       },
       {
-        "icon": "tailwindcss"
+        "icon": "Tailwindcss"
       }
     ],
     "description": "A minimalist, markdown enabled note-taking app, where you can save notes, tag them and store them in an infinite hierarchal folder structure.",
@@ -57,16 +57,16 @@
     ],
     "techstack": [
       {
-        "icon": "react"
+        "icon": "React"
       },
       {
-        "icon": "mui"
+        "icon": "Mui"
       },
       {
-        "icon": "firebase"
+        "icon": "Firebase"
       },
       {
-        "icon": "netlify"
+        "icon": "Netlify"
       }
     ],
     "description": "A movie selector app, where multiple people can log in, make groups and select a movie that all of them like to watch based on common interests.",
@@ -90,16 +90,16 @@
     ],
     "techstack": [
       {
-        "icon": "react"
+        "icon": "React"
       },
       {
-        "icon": "typescript"
+        "icon": "Typescript"
       },
       {
-        "icon": "tailwindcss"
+        "icon": "Tailwindcss"
       },
       {
-        "icon": "github"
+        "icon": "Github"
       }
     ],
     "description": "My current personal website in hopes of sharing a little snippet into my life and passions!",

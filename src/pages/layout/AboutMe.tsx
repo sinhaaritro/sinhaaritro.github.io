@@ -1,31 +1,14 @@
 import AritroLogo from "assets/svg/AritroLogo";
-import Chip from "components/Chip";
-import { SubTitle, KeyValuePair } from "components/Typography";
-import { useThemeContext } from "config/theme";
+import { KeyValuePair, SubTitle } from "components/Typography";
 import SocialIcons from "layout/SocialIcons";
+import Skills from "./Skills";
 
 function AboutMe() {
-  const { theme } = useThemeContext();
-
-  const skillList: Array<{ color: string; icon: string; text: string }> = [
-    { icon: "react", text: "React", color: "sky" },
-    { icon: "nodedotjs", text: "NodeJS", color: "emerald" },
-    { icon: "express", text: "Express", color: "slate" },
-    { icon: "mongodb", text: "MongoDB", color: "green" },
-    { icon: "typescript", text: "TypeScript", color: "blue" },
-    { icon: "git", text: "Git", color: "orange" },
-    { icon: "postgresql", text: "Postgresql", color: "indigo" },
-    { icon: "docker", text: "Docker", color: "blue" },
-    { icon: "cplusplus", text: "C++", color: "blue" },
-    { icon: "dart", text: "Dart", color: "sky" },
-    { icon: "python", text: "Python", color: "blue" },
-  ];
-
   return (
     <section id="about-me" className="my-3 px-2 mx-auto aspect-video">
       <section
         id="about-me-main"
-        className={`flex flex-col justify-around h-full grow rounded-2xl drop-shadow ${theme?.primary?.[100]} `}
+        className="flex flex-col justify-around h-full grow rounded-2xl drop-shadow bg-primary-100"
       >
         <div className="flex flex-col gap-6 justify-around px-8 py-12">
           <div className="flex mx-auto">
@@ -49,7 +32,7 @@ function AboutMe() {
       </section>
       <section
         id="about-me-details"
-        className={`mx-4 flex flex-col justify-around rounded-b-2xl drop-shadow ${theme?.primary?.[100]}`}
+        className="mx-4 flex flex-col justify-around rounded-b-2xl drop-shadow bg-primary-100"
       >
         <SubTitle className="border-y border-neutral-500 p-1">
           About Me
@@ -97,18 +80,7 @@ function AboutMe() {
           />
         </div>
 
-        <SubTitle className="border-y border-neutral-500 p-1">Skills</SubTitle>
-
-        <div className="p-12 flex flex-wrap justify-around gap-2 text-m text-center">
-          {skillList.map((skill) => (
-            <Chip
-              key={skill.icon}
-              icon={skill.icon}
-              text={skill.text}
-              variant="large"
-            />
-          ))}
-        </div>
+        <Skills />
       </section>
     </section>
   );

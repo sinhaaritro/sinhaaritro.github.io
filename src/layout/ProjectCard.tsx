@@ -1,5 +1,6 @@
-import Button from "components/Button";
-import Chip from "components/Chip";
+import SecondaryButton from "components/Button/SecondaryButton";
+import Chip from "components/Chip/Chip";
+import SimpleIcon from "components/SimpleIcon";
 import { ProjectInterface } from "data/projects";
 import openLinkInNewTab from "lib/hooks/openLinkInNewTab";
 
@@ -24,16 +25,20 @@ function ProjectCard({ project }: ProjectCardProps) {
           {title}
         </p>
       </div>
-      <div className="absolute w-80 p-3 bg-neutral-50 origin-top transition ease-in-out duration-500 shadow-lg shadow-neutral-700 scale-y-0  group-hover:flex flex-col group-hover:-translate-y-40 group-hover:scale-y-100 group-hover:z-20 rounded-b-2xl  gap-3">
+      <div className="absolute w-80 p-3 bg-neutral-50 origin-top transition ease-in-out duration-500 shadow-lg shadow-neutral-700 scale-y-0  group-hover:flex flex-col group-hover:-translate-y-40 group-hover:scale-y-100 group-hover:z-20 rounded-b-2xl gap-3">
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <Chip key={tag.icon} icon={tag.icon} text={tag.text} />
+            <Chip key={tag.text} chipStyle="amber">
+              {tag.text}
+            </Chip>
           ))}
         </div>
         <div className="bg-neutral-500 h-px w-full" />
         <div className="flex flex-wrap gap-2">
           {techstack.map((tech) => (
-            <Chip key={tech.text} text={tech.text} icon={tech.icon} />
+            <Chip key={tech.icon} chipStyle="amber">
+              <SimpleIcon iconName={tech.icon} />
+            </Chip>
           ))}
         </div>
         <div className="bg-neutral-500 h-px w-full" />
@@ -50,13 +55,12 @@ function ProjectCard({ project }: ProjectCardProps) {
         )}
         <div className="flex flex-wrap gap-2 justify-center">
           {externalLinks.map((externalLink) => (
-            <Button
+            <SecondaryButton
               key={externalLink.name}
-              variant="secondary"
               onClick={() => openLinkInNewTab(externalLink.url)}
             >
               {externalLink.name}
-            </Button>
+            </SecondaryButton>
           ))}
         </div>
       </div>

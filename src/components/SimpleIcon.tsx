@@ -11,7 +11,7 @@ export type SimpleIconProps = WithClassName<{
 function SimpleIcon({ iconName, className = "" }: SimpleIconProps) {
   // @ts-ignore:
   const icon: SimpleIconInterface = icons[`si${iconName}`];
-
+  // icons.siNo
   return (
     <div
       className={`h-6 w-6 ${className}`}

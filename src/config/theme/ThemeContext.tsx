@@ -4,7 +4,6 @@ import {
   ThemeContextProviderProps,
   ThemeTypes,
 } from "./app-theme.interface";
-import { defaultLightTheme } from "./themes";
 
 export const ThemeContext = createContext<ThemeContextInterface>({
   theme: null,
@@ -14,10 +13,12 @@ export const ThemeContext = createContext<ThemeContextInterface>({
 export const useThemeContext = () => useContext(ThemeContext);
 
 function ThemeContextProvider({ children }: ThemeContextProviderProps) {
-  const [theme, setTheme] = useState(defaultLightTheme);
+  const [theme, setTheme] = useState<ThemeTypes>("light");
 
   const changeTheme = (type: ThemeTypes) => {
-    if (type === "light") setTheme(defaultLightTheme);
+    if (type === "light") setTheme("light");
+    if (type === "dark") setTheme("dark");
+    if (type === "system") setTheme("light");
   };
 
   const ThemeContextProviderValue = useMemo(
