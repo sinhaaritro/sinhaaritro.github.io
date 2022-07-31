@@ -3,7 +3,7 @@ import SimpleIcon from "components/SimpleIcon";
 import openLinkInNewTab from "lib/hooks/openLinkInNewTab";
 import { WithClassName } from "lib/interfaces/withClassName";
 
-type SocialIconsProps = WithClassName<{ iconClassname?: string }>;
+type SocialIconsProps = WithClassName<{}>;
 
 type SocialIconI = {
   icon: string;
@@ -12,9 +12,9 @@ type SocialIconI = {
   color?: string;
 };
 
-function SocialIcons({ iconClassname = "", className = "" }: SocialIconsProps) {
+function SocialIcons({ className = "" }: SocialIconsProps) {
   const contactList: Array<SocialIconI> = [
-    // { icon: "Discord", link: "", text: "" },
+    { icon: "Discord", link: "", text: "" },
     {
       icon: "Gmail",
       link: "sinhaaritro@gmail.com",
@@ -25,8 +25,8 @@ function SocialIcons({ iconClassname = "", className = "" }: SocialIconsProps) {
       link: "https://github.com/sinhaaritro",
       text: "sinhaaritro",
     },
-    // { icon: "Youtube", link: "", text: "" },
-    // { icon: "Twitter", link: "", text: "" },
+    { icon: "Youtube", link: "", text: "" },
+    { icon: "Twitter", link: "", text: "" },
     {
       icon: "Linkedin",
       link: "https://www.linkedin.com/in/aritro-sinha-98045a1a7/",
@@ -43,7 +43,7 @@ function SocialIcons({ iconClassname = "", className = "" }: SocialIconsProps) {
         >
           <SimpleIcon
             iconName={contact.icon}
-            className={`bg-neutral-700 fill-neutral-200 rounded p-1 ${iconClassname}`}
+            className="bg-neutral-700 fill-neutral-200 rounded p-1"
           />
         </IconButton>
       ))}

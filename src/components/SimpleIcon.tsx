@@ -14,7 +14,7 @@ function SimpleIcon({ iconName, className = "" }: SimpleIconProps) {
   // icons.siNo
   return (
     <div
-      className={`h-6 w-6 ${className}`}
+      className={`h-8 w-8 ${className}`}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: icon.svg }}
     />

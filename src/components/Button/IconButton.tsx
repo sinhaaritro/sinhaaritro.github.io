@@ -16,7 +16,7 @@ function IconButton({
 }: IconButtonProps) {
   return (
     <Button
-      className={`font-medium p-1 rounded capitalize hover:bg-neutral-700 hover:text-neutral-100 hover:underline ${className}`}
+      className={`font-medium p-1 rounded ${className}`}
       onClick={onClick}
       {...props}
     >
