@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import Navigation from "../../layout/Navigation";
 
 function Header() {
-  const isMediumScreen = useMediaQuery({ query: "(min-width: 769px)" });
+  const isMediumScreen = useMediaQuery({ query: "(min-width: 768px)" });
 
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
 

@@ -37,7 +37,7 @@ function AboutMe() {
         <SubTitle className="border-y border-neutral-500 p-1">
           About Me
         </SubTitle>
-        <div className="py-5 px-3 flex flex-col gap-6 text-center text-base">
+        <div className="py-5 px-3 flex flex-col gap-6 text-center text-base sm:px-6">
           <p>
             Hi, I am generalist programmer and designer. I love to find out how
             all kinds software works and use them in a creative way.

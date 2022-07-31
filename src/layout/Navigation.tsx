@@ -17,7 +17,7 @@ function Navigation({ toggleNavMenuOpen }: NavigationProps) {
   };
 
   return (
-    <nav className="absolute top-16 inset-x-6 bg-neutral-100 rounded md:static">
+    <nav className="absolute top-16 inset-x-6 sm:inset-x-20 bg-neutral-100 rounded md:static">
       <ul className="flex flex-col md:flex-row md:bg-inherit items-center">
         {navLinks.map((navLink) => (
           <ListButton
