@@ -19,7 +19,7 @@ function ListButton({
       title={title}
     >
       <Button
-        className="grow m-1 font-medium p-2 rounded text-neutral-900 hover:bg-neutral-400"
+        className="grow m-1 font-medium p-2 rounded hover:bg-neutral-400 md:hover:bg-neutral-700"
         tabIndex={-1}
         {...props}
       >

@@ -17,13 +17,14 @@ function Navigation({ toggleNavMenuOpen }: NavigationProps) {
   };
 
   return (
-    <nav className="absolute top-16 inset-x-6 sm:inset-x-20 bg-neutral-100 rounded md:static">
-      <ul className="flex flex-col md:flex-row md:bg-inherit items-center">
+    <nav className="absolute top-16 inset-x-6 bg-neutral-100 rounded sm:inset-x-20 md:static md:bg-transparent">
+      <ul className="flex flex-col items-center md:flex-row md:bg-inherit">
         {navLinks.map((navLink) => (
           <ListButton
             linkClick={() => navigateTo(navLink.link)}
             key={navLink.name}
             title={navLink.name}
+            className="md:text-neutral-100 md:w-fit"
           >
             {navLink.name}
           </ListButton>

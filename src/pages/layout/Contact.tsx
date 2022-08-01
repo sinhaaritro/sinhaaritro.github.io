@@ -10,7 +10,7 @@ function Contact() {
       <SubTitle className="rounded-t-2xl border-b border-neutral-400 p-2 text-4xl">
         Contact
       </SubTitle>
-      <div className="p-3 flex flex-col gap-4 text-center">
+      <div className="p-3 flex flex-col gap-4 text-center sm:px-6 md:px-12">
         <p>
           Have a project in mind? Feel free to contact me at
           sinhaaritro@gmail.com. I'll try to respond as quick as I can!

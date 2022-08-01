@@ -1,10 +1,8 @@
 import SubTitle from "components/Typography/SubTitle";
-import { ProjectsInterface } from "data/projects";
-import projectData from "data/projects.json";
+import { projectList } from "data/projects";
 import ProjectCard from "layout/ProjectCard";
 
 function Projects() {
-  const projects = projectData as ProjectsInterface;
   return (
     <section
       id="projects"
@@ -14,7 +12,7 @@ function Projects() {
         Projects
       </SubTitle>
       <div className="p-3 flex flex-wrap gap-4 justify-center z-10">
-        {projects.map((project) => (
+        {projectList.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
       </div>

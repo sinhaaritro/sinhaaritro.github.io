@@ -16,7 +16,7 @@ function AboutMe() {
           </div>
 
           <p className="text-5xl text-center font-bold">Aritro Sinha</p>
-          <div className="flex flex-col gap-3 justify-around text-lg text-center">
+          <div className="flex flex-col gap-3 justify-around text-lg text-center md:flex-row">
             <p>Web Developer</p>
             <p>Software Developer</p>
             <p>Game Developer</p>
@@ -37,7 +37,7 @@ function AboutMe() {
         <SubTitle className="border-y border-neutral-500 p-1">
           About Me
         </SubTitle>
-        <div className="py-5 px-3 flex flex-col gap-6 text-center text-base sm:px-6">
+        <div className="py-5 px-3 flex flex-col gap-6 text-center text-base sm:px-6 md:px-12">
           <p>
             Hi, I am generalist programmer and designer. I love to find out how
             all kinds software works and use them in a creative way.

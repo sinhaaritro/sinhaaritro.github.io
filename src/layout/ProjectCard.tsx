@@ -2,6 +2,8 @@ import SecondaryButton from "components/Button/SecondaryButton";
 import Chip from "components/Chip/Chip";
 import SimpleIcon from "components/SimpleIcon";
 import { ProjectInterface } from "data/projects";
+import { tagList } from "data/projectTag";
+import { technologyList } from "data/technology";
 import openLinkInNewTab from "lib/hooks/openLinkInNewTab";
 
 type ProjectCardProps = { project: ProjectInterface };
@@ -28,16 +30,19 @@ function ProjectCard({ project }: ProjectCardProps) {
       <div className="absolute w-80 p-3 bg-neutral-50 origin-top transition ease-in-out duration-500 shadow-lg shadow-neutral-700 scale-y-0  group-hover:flex flex-col group-hover:-translate-y-40 group-hover:scale-y-100 group-hover:z-20 rounded-b-2xl gap-3">
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <Chip key={tag.text} chipStyle="amber">
-              {tag.text}
+            <Chip key={tagList[tag].text} chipStyle={tagList[tag].color}>
+              {tagList[tag].text}
             </Chip>
           ))}
         </div>
         <div className="bg-neutral-500 h-px w-full" />
         <div className="flex flex-wrap gap-2">
           {techstack.map((tech) => (
-            <Chip key={tech.icon} chipStyle="amber">
-              <SimpleIcon iconName={tech.icon} />
+            <Chip
+              key={technologyList[tech].icon}
+              chipStyle={technologyList[tech].color}
+            >
+              <SimpleIcon iconName={technologyList[tech].icon} />
             </Chip>
           ))}
         </div>

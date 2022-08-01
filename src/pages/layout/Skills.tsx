@@ -1,24 +1,21 @@
-import Chip, { ChipStyleColor } from "components/Chip/Chip";
+import Chip from "components/Chip/Chip";
 import SimpleIcon from "components/SimpleIcon";
 import { SubTitle } from "components/Typography";
+import { TechnologyKey, technologyList } from "data/technology";
 
 function Skills() {
-  const skillList: Array<{
-    color: ChipStyleColor;
-    icon: string;
-    text: string;
-  }> = [
-    { icon: "React", text: "React", color: "sky" },
-    { icon: "Nodedotjs", text: "NodeJS", color: "emerald" },
-    { icon: "Express", text: "Express", color: "slate" },
-    { icon: "Mongodb", text: "MongoDB", color: "green" },
-    { icon: "Typescript", text: "TypeScript", color: "blue" },
-    { icon: "Git", text: "Git", color: "orange" },
-    { icon: "Postgresql", text: "Postgresql", color: "indigo" },
-    { icon: "Docker", text: "Docker", color: "blue" },
-    { icon: "Cplusplus", text: "C++", color: "blue" },
-    { icon: "Dart", text: "Dart", color: "sky" },
-    { icon: "Python", text: "Python", color: "blue" },
+  const skillList: Array<TechnologyKey> = [
+    "React",
+    "NodeJS",
+    "Express",
+    "MongoDB",
+    "TypeScript",
+    "Git",
+    "Postgresql",
+    "Docker",
+    "C++",
+    "Dart",
+    "Python",
   ];
 
   return (
@@ -26,9 +23,9 @@ function Skills() {
       <SubTitle className="border-y border-neutral-500 p-1">Skills</SubTitle>
       <div className="px-12 py-12 flex flex-wrap justify-around gap-2">
         {skillList.map((skill) => (
-          <Chip key={skill.icon} chipStyle={skill.color}>
-            <SimpleIcon iconName={skill.icon} />
-            {skill.text}
+          <Chip key={skill} chipStyle={technologyList[skill].color}>
+            <SimpleIcon iconName={technologyList[skill].icon} />
+            {technologyList[skill].text}
           </Chip>
         ))}
       </div>
