@@ -1,7 +1,7 @@
 import AritroLogo from "assets/svg/AritroLogo";
-import { KeyValuePair, SubTitle } from "components/Typography";
+import PrimaryButton from "components/Button/PrimaryButton";
+import SubSectionTitle from "layout/Section/SubSectionTitle";
 import SocialIcons from "layout/SocialIcons";
-import Skills from "./Skills";
 
 function AboutMe() {
   return (
@@ -26,18 +26,18 @@ function AboutMe() {
           </div>
           <SocialIcons />
         </div>
-        <div className="p-2 border-t border-neutral-500 text-base text-center">
+        <PrimaryButton className="border-t border-neutral-500 rounded-t-none rounded-b-2xl text-base text-center">
           Download Resume
-        </div>
+        </PrimaryButton>
       </section>
       <section
         id="about-me-details"
-        className="mx-4 flex flex-col justify-around rounded-b-2xl drop-shadow bg-primary-100"
+        className="mx-4 flex flex-col rounded-b-2xl drop-shadow bg-primary-100 xl:mx-0 xl:my-10 xl:rounded-bl-none xl:rounded-tr-2xl xl:border-l xl:border-neutral-500"
       >
-        <SubTitle className="border-y border-neutral-500 p-1">
+        <SubSectionTitle className="xl:rounded-tr-2xl xl:border-t-0">
           About Me
-        </SubTitle>
-        <div className="py-5 px-3 flex flex-col gap-6 text-center text-base sm:px-6 md:px-12">
+        </SubSectionTitle>
+        <div className="py-5 px-3 flex flex-col justify-evenly gap-6 text-center text-base sm:px-6 md:px-12 xl:grow">
           <p>
             Hi, I am generalist programmer and designer. I love to find out how
             all kinds software works and use them in a creative way.
@@ -56,39 +56,6 @@ function AboutMe() {
             shifted and now I like to program and visually design everything.
           </p>
         </div>
-
-        <div className="xl:flex">
-          <div className="xl:grow">
-            <SubTitle className="border-y border-neutral-500 p-1">
-              Experience
-            </SubTitle>
-
-            <div className="py-5 px-3 flex flex-col gap-6 text-center">
-              <KeyValuePair
-                keyItem="Hyland (2022 - Present)"
-                valueItem="Intern"
-              />
-            </div>
-          </div>
-          <div className="xl:grow">
-            <SubTitle className="border-y border-neutral-500 p-1">
-              Education
-            </SubTitle>
-
-            <div className="py-5 px-3 flex flex-col gap-6 text-center">
-              <KeyValuePair
-                keyItem="BCA(2017 - 2020)"
-                valueItem="Techno India University"
-              />
-              <KeyValuePair
-                keyItem="MCA (2020 - 2022)"
-                valueItem="Netaji Subhash Engineering College"
-              />
-            </div>
-          </div>
-        </div>
-
-        <Skills />
       </section>
     </section>
   );
