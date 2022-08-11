@@ -15,8 +15,12 @@ function Experience() {
           <SubSectionTitle>Work</SubSectionTitle>
           <div className="py-5 px-20 flex flex-col gap-6 text-left">
             <KeyValuePair>
-              <KeyPair>Hyland (2022 - Present)</KeyPair>
+              <KeyPair>Hyland (2022 - 2022)</KeyPair>
               <ValuePair>Intern</ValuePair>
+            </KeyValuePair>
+            <KeyValuePair>
+              <KeyPair>LabVantage Solutions, Inc (2022 - Present)</KeyPair>
+              <ValuePair>Associate Solution Engineer</ValuePair>
             </KeyValuePair>
           </div>
 
