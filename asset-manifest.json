@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.aca24aad.css",
-    "main.js": "/static/js/main.4603f3ed.js",
-    "index.html": "/index.html",
-    "main.aca24aad.css.map": "/static/css/main.aca24aad.css.map",
-    "main.4603f3ed.js.map": "/static/js/main.4603f3ed.js.map"
+    "main.css": "/sinhaaritro.github.io/static/css/main.aca24aad.css",
+    "main.js": "/sinhaaritro.github.io/static/js/main.4603f3ed.js",
+    "index.html": "/sinhaaritro.github.io/index.html",
+    "main.aca24aad.css.map": "/sinhaaritro.github.io/static/css/main.aca24aad.css.map",
+    "main.4603f3ed.js.map": "/sinhaaritro.github.io/static/js/main.4603f3ed.js.map"
   },
   "entrypoints": [
     "static/css/main.aca24aad.css",
