@@ -1,7 +1,7 @@
 {
   "name": "sinhaaritro.github.io",
   "version": "3.0.0",
-  "homepage": "http://sinhaaritro.github.io/sinhaaritro.github.io",
+  "homepage": "https://sinhaaritro.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
