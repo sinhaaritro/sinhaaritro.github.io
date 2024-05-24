@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/sinhaaritro.github.io/static/css/main.f7bc4e15.css",
-    "main.js": "/sinhaaritro.github.io/static/js/main.def32f2d.js",
-    "index.html": "/sinhaaritro.github.io/index.html",
-    "main.f7bc4e15.css.map": "/sinhaaritro.github.io/static/css/main.f7bc4e15.css.map",
-    "main.def32f2d.js.map": "/sinhaaritro.github.io/static/js/main.def32f2d.js.map"
+    "main.css": "/static/css/main.f7bc4e15.css",
+    "main.js": "/static/js/main.def32f2d.js",
+    "index.html": "/index.html",
+    "main.f7bc4e15.css.map": "/static/css/main.f7bc4e15.css.map",
+    "main.def32f2d.js.map": "/static/js/main.def32f2d.js.map"
   },
   "entrypoints": [
     "static/css/main.f7bc4e15.css",
