@@ -7,7 +7,7 @@ function AboutMe() {
   return (
     <section
       id="about-me"
-      className="my-3 px-2 mx-auto aspect-auto xl:flex xl:items-stretch	"
+      className="my-3 px-2 mx-auto aspect-auto xl:flex xl:items-stretch"
     >
       <section
         id="about-me-main"
