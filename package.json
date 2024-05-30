@@ -1,7 +1,7 @@
 {
-  "name": "aritro_sinhas_protfolio_website",
+  "name": "aritro_sinha_protfolio_website",
   "version": "3.0.0",
-  "homepage": "https://www.aritrosinha.us.kg/",
+  "homepage": "http://www.aritrosinha.us.kg",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
